@@ -1,7 +1,12 @@
 import Header from "./common/Header";
+import { AppContainer } from "./features/AppContainer/styled";
 
 function App() {
-  return <Header title="Personal Homepage" />;
+  return (
+    <AppContainer>
+      <Header title="Personal Homepage" />
+    </AppContainer>
+  );
 }
 
 export default App;
