@@ -4,7 +4,7 @@ import { AppContainer } from "./features/AppContainer/styled";
 function App() {
   return (
     <AppContainer>
-      <Header title="Personal Homepage" />
+      <Header />
     </AppContainer>
   );
 }

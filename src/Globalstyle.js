@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        word-break: break-word;
     }
 
     *,
@@ -14,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Inter', sans-serif;
         font-size: 18px;
-
+        background-color: ${({ theme }) => theme.color.whiteLilac};           
     }
 `;
-        /* background-color: ${({ theme }) => theme.color.gallery}; */
+
+
