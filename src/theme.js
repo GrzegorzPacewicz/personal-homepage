@@ -1,16 +1,17 @@
 export const theme = {
   color: {
     whiteLilac: "#FBFBFE",
-    white: "#fff",
+    white: "#FFFFFF",
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     mineShaft: "#252525",
+    scienceBlue: "#0366D6"
 
   },
   breakpoint: {
     mobile: 320,
     bigMobile: 480,
-    ipad: 768,
+    mobileMax: 767,
     bigScreen: 1024,
   },
 };

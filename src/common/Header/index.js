@@ -1,26 +1,39 @@
 import {
-  HeaderParagraph,
-  BasicInfoContainer,
+  ThisIs,
+  Details,
   HeaderWrapper,
-  Image,
-  StyledHeader,
-  HeaderText,
+  Photo,
+  Name,
+  Description,
   EmailLink,
+  Envelope,
+  ThemeSwitchButton,
+  ThemeSwitch,
+  BackgroundText,
 } from "./styled";
-import image from "./GP2.jpg";
+import image from "./images/author.jpg";
+import envelope from "./images/envelope.svg";
+import { email } from "../personalInfo";
 
 const Header = () => (
   <HeaderWrapper>
-    <Image src={image} alt="Grzegorza Pacewicza Photo" />
-    <BasicInfoContainer>
-      <HeaderParagraph>This is</HeaderParagraph>
-      <StyledHeader>Grzegorz Pacewicz</StyledHeader>
-      <HeaderText>
+    <Photo src={image} alt="Grzegorza Pacewicza Photo" />
+    <Details>
+      <ThisIs>This is</ThisIs>
+      <Name>Grzegorz Pacewicz</Name>
+      <Description>
         👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
-      </HeaderText>
-      <EmailLink>Hire me</EmailLink>
-    </BasicInfoContainer>
+      </Description>
+      <EmailLink href={`mailto:${email}`} title={email}>
+        <Envelope src={envelope} alt=""></Envelope>
+        Hire me
+      </EmailLink>{" "}
+    </Details>
+    <ThemeSwitch>
+      <BackgroundText>Dark mode off</BackgroundText>
+      <ThemeSwitchButton></ThemeSwitchButton>
+    </ThemeSwitch>
   </HeaderWrapper>
 );
 
