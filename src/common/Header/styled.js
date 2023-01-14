@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.header`
   margin-bottom: 64px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     margin-bottom: 56px;
   }
 `;
@@ -75,7 +75,7 @@ export const EmailLink = styled.a`
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr;
-  
+
   /* display: flex;
   flex-direction: row;
   justify-content: center;
@@ -83,7 +83,6 @@ export const EmailLink = styled.a`
 `;
 
 export const ThemeSwitch = styled.div`
-  border: 1px solid rgba(209, 213, 218, 0.3);
   display: flex;
   align-self: flex-start;
   justify-self: flex-end;
@@ -91,20 +90,35 @@ export const ThemeSwitch = styled.div`
   align-items: center;
   position: absolute;
 
-  border-radius: 25%/50%;
-  padding: 2px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  // padding: 0px;
+  // gap: 12px;
+
   transition: all 0.5s;
 `;
 
 export const ThemeSwitchButton = styled.div`
-  background-color: ${({ theme }) => theme.color.lightGray};
-  border: 1px solid ${({ theme }) => theme.color.slateGray};
+  background-color: ${({ theme }) => theme.color.mercury};
+  border: 1px solid rgba(209, 213, 218, 0.3);
   width: 47.06px;
   height: 25.07px;
   border-radius: 30px;
   display: grid;
   align-content: center;
   cursor: pointer;
+
+
+// // /* Light grey */
+
+// background: ${({ theme }) => theme.color.lightGray};
+// /* Diff/bg-neutral
+
+
+// */
+// border: 1px solid rgba(209, 213, 218, 0.3);
 `;
 
 export const BackgroundText = styled.p`
