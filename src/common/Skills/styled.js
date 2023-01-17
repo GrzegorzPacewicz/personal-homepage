@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const SkillsWraper = styled.div`
   max-width: 1216px;
-  min-height: 404px;
   left: calc(50% - 1216px / 2 + 2px);
   background: ${({ theme }) => theme.color.white};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
+  padding-bottom: 32px;
 `;
 
 export const SubHeader = styled.h2`

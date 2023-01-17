@@ -29,4 +29,15 @@ export const personalInfo = [
       "Git",
     ],
   },
+  {
+    title: "What I want to learn next",
+    icon: "🚀",
+    list: [
+      "Typescript",
+      "Node.js",
+      "Unit testing",
+      "React Context",
+      "Cypress",
+    ],
+  },
 ];
