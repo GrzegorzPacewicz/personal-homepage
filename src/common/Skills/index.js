@@ -1,18 +1,31 @@
-import { Divider, List, ListWrapper, SkillsWraper, Span, SubHeader } from "./styled";
+import {
+  Divider,
+  ListItem,
+  List,
+  SkillsWraper,
+  Icon,
+  SubHeader,
+  Point,
+} from "./styled";
 
-const Skills = ({ title }) => (
-  <SkillsWraper>
-    <SubHeader>{(title = "My skills include")}
-    <Span>🛠️</Span>
-    </SubHeader> 
-    <Divider />
-    <ListWrapper>
-        <List>something</List>
-    </ListWrapper>
-  </SkillsWraper>
-  
-
-  
-);
+const Skills = ({ title, icon, list }) => {
+  return (
+    <SkillsWraper>
+      <SubHeader>
+        {title}
+        <Icon>{icon}</Icon>
+      </SubHeader>
+      <Divider />
+      <List>
+        {list.map((item) => (
+          <ListItem key={item}>
+            <Point />
+            {item}
+          </ListItem>
+        ))}
+      </List>
+    </SkillsWraper>
+  );
+};
 
 export default Skills;
