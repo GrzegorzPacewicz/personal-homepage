@@ -1,5 +1,6 @@
 import Header from "./common/Header";
 import { personalInfo } from "./common/personalInfo";
+import Portfolio from "./common/Portfolio";
 import Skills from "./common/Skills";
 import { AppContainer } from "./features/AppContainer/styled";
 
@@ -14,6 +15,7 @@ function App() {
           list={sectionInfo.list}
         />
       ))}
+      <Portfolio />
     </AppContainer>
   );
 }
