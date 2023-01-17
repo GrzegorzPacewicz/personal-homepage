@@ -10,9 +10,11 @@ import {
   ThemeSwitchButton,
   ThemeSwitch,
   BackgroundText,
+  LightTheme
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
+import light from "./images/light.svg"
 import { email } from "../personalInfo";
 
 const Header = () => (
@@ -32,7 +34,9 @@ const Header = () => (
     </Details>
     <ThemeSwitch>
       <BackgroundText>Dark mode off</BackgroundText>
-      <ThemeSwitchButton></ThemeSwitchButton>
+      <ThemeSwitchButton>
+        <LightTheme src={light} alt="" />
+      </ThemeSwitchButton>
     </ThemeSwitch>
   </HeaderWrapper>
 );

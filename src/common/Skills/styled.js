@@ -11,9 +11,6 @@ export const SkillsWraper = styled.div`
 `;
 
 export const SubHeader = styled.h2`
-  /* My skillset includes */
-  /* H2 */
-
   font-style: normal;
   font-weight: 900;
   font-size: 30px;
@@ -21,13 +18,10 @@ export const SubHeader = styled.h2`
   text-align: left;
   letter-spacing: 0.05em;
   padding: 32px 32px 0px 32px;
-
-  /* Black text */
-
   color: #252525;
 `;
 
-export const Span = styled.span`
+export const Icon = styled.span`
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -41,44 +35,34 @@ export const Divider = styled.div`
   height: 1px;
   margin-left: 32px;
   margin-right: 32px;
-
-  /* Diff/bg-neutral
-
-Source: gray-300
-*/
   background: rgba(209, 213, 218, 0.3);
 `;
-export const ListWrapper = styled.ul`
-  /* Skills */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 115px;
-  
+export const List = styled.ul`
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-content: space-between;
+  margin: 32px 0 0;
+  grid-gap: 8px;
+  padding-left: 0;
 `;
 
-export const List = styled.li`
+export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
-  line-height: 140%;
-  /* or 25px */
-
   letter-spacing: 0.05em;
-
-  /* Text secondary */
-
   color: #6e7e91;
   margin: 0 32px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+`;
 
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-decoration: blue;
-  
+export const Point = styled.span`
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 16px;
+  background: #0366d6;
+  flex-shrink: 0;
 `;

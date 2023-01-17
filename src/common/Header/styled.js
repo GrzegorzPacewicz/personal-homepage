@@ -29,7 +29,7 @@ export const Details = styled.div`
   margin-left: 66px;
   align-self: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-row-start: 2;
     margin-left: 0;
   }
@@ -41,20 +41,23 @@ export const ThisIs = styled.p`
   line-height: 1.3;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.slateGray};
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
 `;
 
 export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
+  margin: 0 0 36px 0;
   color: ${({ theme }) => theme.color.mineShaft};
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   font-weight: 400;
+  font-style: normal;
+  font: 'Inter';
   font-size: 20px;
   line-height: 140%;
-  margin-top: 36px;
+  margin: 0 0 32px 0;
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
@@ -67,7 +70,7 @@ export const EmailLink = styled.a`
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   max-width: fit-content;
-  margin-top: 32px;
+  margin: 0;
   gap: 16px;
   text-decoration: none;
   transition: 0.3s;
@@ -106,10 +109,11 @@ export const ThemeSwitchButton = styled.div`
   width: 47.06px;
   height: 25.07px;
   border-radius: 30px;
-  display: grid;
-  align-content: center;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 
+ 
 
 // // /* Light grey */
 
@@ -129,6 +133,14 @@ export const BackgroundText = styled.p`
   text-transform: uppercase;
   display: grid;
   align-content: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    display: none;
+  }
 `;
 
 export const Envelope = styled.img``;
+
+export const LightTheme = styled.img`
+  padding: 2px;
+`;
