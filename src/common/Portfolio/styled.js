@@ -10,6 +10,7 @@ export const PortfolioHeader = styled(SubHeader)`
   text-align: center;
   margin: 0 0 8px 0;
   padding-top: 8px;
+  display: grid;
 `;
 
 export const GitHubLogo = styled.img`
@@ -48,11 +49,12 @@ export const Tile = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
   padding: 56px;
   gap: 24px;
+  text-align: justify;
 `;
 
 export const ProjectTitle = styled.h3`
@@ -74,10 +76,7 @@ export const ProjectDescription = styled.p`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0;
+
 `;
 
 export const ProjectDemo = styled(ProjectDescription)`

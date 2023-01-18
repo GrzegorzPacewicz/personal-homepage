@@ -22,12 +22,12 @@ const Portfolio = () => {
         <Tile>
           <ProjectWrapper>
             <ProjectTitle>Tittle</ProjectTitle>
-            <ProjectDescription>
-              Project description, e.g. website where you can search for
+            <ProjectDescription>Project description, e.g. website where you can search for
               favourite movies and people. Project description, e.g. website
               where you can search.
             </ProjectDescription>
             <ProjectDemo>Demo:</ProjectDemo>
+            <ProjectDemo>Repo:</ProjectDemo>
           </ProjectWrapper>
         </Tile>{" "}
         <Tile>Lorem Ips</Tile>
