@@ -10,17 +10,6 @@ export const SkillsWraper = styled.div`
   padding-bottom: 32px;
 `;
 
-export const SubHeader = styled.h2`
-  font-style: normal;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: left;
-  letter-spacing: 0.05em;
-  padding: 32px 32px 0px 32px;
-  color: #252525;
-`;
-
 export const Icon = styled.span`
   font-style: normal;
   font-weight: 400;
@@ -28,6 +17,7 @@ export const Icon = styled.span`
   line-height: 29px;
   text-align: center;
   letter-spacing: 0.05em;
+  padding-left: 16px;
 `;
 
 export const Divider = styled.div`
@@ -51,7 +41,7 @@ export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.05em;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.color.slateGray};
   margin: 0 32px;
   line-height: 1.4;
   display: flex;
@@ -63,6 +53,6 @@ export const Point = styled.span`
   height: 9px;
   border-radius: 50%;
   margin-right: 16px;
-  background: #0366d6;
+  background: ${({ theme }) => theme.color.scienceBlue};
   flex-shrink: 0;
 `;

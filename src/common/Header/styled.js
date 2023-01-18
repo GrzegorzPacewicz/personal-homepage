@@ -54,7 +54,7 @@ export const Name = styled.h1`
 export const Description = styled.p`
   font-weight: 400;
   font-style: normal;
-  font: 'Inter';
+  font: "Inter";
   font-size: 20px;
   line-height: 140%;
   margin: 0 0 32px 0;
@@ -78,11 +78,6 @@ export const EmailLink = styled.a`
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr;
-
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
 `;
 
 export const ThemeSwitch = styled.div`
@@ -92,14 +87,6 @@ export const ThemeSwitch = styled.div`
   gap: 16px;
   align-items: center;
   position: absolute;
-
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-  // align-items: center;
-  // padding: 0px;
-  // gap: 12px;
-
   transition: all 0.5s;
 `;
 
@@ -112,17 +99,6 @@ export const ThemeSwitchButton = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-
- 
-
-// // /* Light grey */
-
-// background: ${({ theme }) => theme.color.lightGray};
-// /* Diff/bg-neutral
-
-
-// */
-// border: 1px solid rgba(209, 213, 218, 0.3);
 `;
 
 export const BackgroundText = styled.p`
@@ -139,7 +115,9 @@ export const BackgroundText = styled.p`
   }
 `;
 
-export const Envelope = styled.img``;
+export const Envelope = styled.img`
+  margin: 0;
+`;
 
 export const LightTheme = styled.img`
   padding: 2px;

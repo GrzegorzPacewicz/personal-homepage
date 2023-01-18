@@ -9,4 +9,6 @@ export const SubHeader = styled.h2`
   letter-spacing: 0.05em;
   padding: 32px 32px 0px 32px;
   color: #252525;
+  display: flex;
+  align-content: center;
 `;

@@ -1,12 +1,13 @@
+import { SubHeader } from "../SubHeader/styled";
 import {
   Divider,
   ListItem,
   List,
   SkillsWraper,
   Icon,
-  SubHeader,
   Point,
 } from "./styled";
+
 
 const Skills = ({ title, icon, list }) => {
   return (

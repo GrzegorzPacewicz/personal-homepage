@@ -1,3 +1,4 @@
+import { nanoid } from "@reduxjs/toolkit";
 import Header from "./common/Header";
 import { personalInfo } from "./common/personalInfo";
 import Portfolio from "./common/Portfolio";
@@ -10,6 +11,7 @@ function App() {
       <Header />
       {personalInfo.map((sectionInfo) => (
         <Skills
+          key={nanoid()}
           title={sectionInfo.title}
           icon={sectionInfo.icon}
           list={sectionInfo.list}
