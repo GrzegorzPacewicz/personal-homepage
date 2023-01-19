@@ -9,7 +9,7 @@ import {
 } from "./styled";
 
 
-const Skills = ({ title, icon, list }) => {
+const SkillsTile = ({ title, icon, list }) => {
   return (
     <SkillsWraper>
       <SubHeader>
@@ -29,4 +29,4 @@ const Skills = ({ title, icon, list }) => {
   );
 };
 
-export default Skills;
+export default SkillsTile;

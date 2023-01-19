@@ -6,7 +6,7 @@ import {
   TilesWrapper,
 } from "./styled";
 import logo from "./images/git.svg";
-import Tile from "../../common/Tile/index";
+import GitHubTile from "../../common/GitHubTile/index";
 
 const Portfolio = () => {
   return (
@@ -15,7 +15,7 @@ const Portfolio = () => {
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
       <TilesWrapper>
-        <Tile />
+        <GitHubTile />
       </TilesWrapper>
     </PortfolioWrapper>
   );
