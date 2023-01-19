@@ -76,9 +76,20 @@ export const ProjectDescription = styled.p`
   align-items: center;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.slateGray};
-
 `;
 
 export const ProjectDemo = styled(ProjectDescription)`
- margin-top: 8px;
+  margin-top: 8px;
+`;
+
+export const ProjectLink = styled.a`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: ${({ theme }) => theme.color.scienceBlue};
+  text-decoration: none;
+  border-bottom: 1px solid;
+
+  &:hover {
+  }
 `;

@@ -9,6 +9,7 @@ import {
   ProjectTitle,
   ProjectDescription,
   ProjectDemo,
+  ProjectLink,
 } from "./styled";
 import logo from "./images/git.svg";
 
@@ -22,12 +23,18 @@ const Portfolio = () => {
         <Tile>
           <ProjectWrapper>
             <ProjectTitle>Tittle</ProjectTitle>
-            <ProjectDescription>Project description, e.g. website where you can search for
+            <ProjectDescription>
+              Project description, e.g. website where you can search for
               favourite movies and people. Project description, e.g. website
               where you can search.
             </ProjectDescription>
-            <ProjectDemo>Demo:</ProjectDemo>
-            <ProjectDemo>Repo:</ProjectDemo>
+            <ProjectDemo>
+              Demo: {" "}
+              <ProjectLink href="https://link.demo.com"> {" "} https://link.demo.com
+              </ProjectLink>{" "}
+            </ProjectDemo>
+            <ProjectDemo>Repo: <ProjectLink href="https://link.demo.com"> {" "} https://link.demo.com
+              </ProjectLink>{" "}</ProjectDemo>
           </ProjectWrapper>
         </Tile>{" "}
         <Tile>Lorem Ips</Tile>
