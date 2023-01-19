@@ -1,22 +1,13 @@
-import { nanoid } from "@reduxjs/toolkit";
-import Header from "./common/Header";
-import { personalInfo } from "./common/personalInfo";
+import Header from "./features/Header";
 import Portfolio from "./features/Portfolio";
-import Skills from "./common/Skills";
 import { AppContainer } from "./features/AppContainer/styled";
+import Skills from "./features/Skills";
 
 function App() {
   return (
     <AppContainer>
       <Header />
-      {personalInfo.map((sectionInfo) => (
-        <Skills
-          key={nanoid()}
-          title={sectionInfo.title}
-          icon={sectionInfo.icon}
-          list={sectionInfo.list}
-        />
-      ))}
+      <Skills />
       <Portfolio />
     </AppContainer>
   );
