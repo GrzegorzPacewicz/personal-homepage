@@ -10,11 +10,11 @@ import {
   ThemeSwitchButton,
   ThemeSwitch,
   BackgroundText,
-  LightTheme
+  LightTheme,
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
-import light from "./images/light.svg"
+import light from "./images/light.svg";
 import { email } from "../personalInfo";
 
 const Header = () => (
