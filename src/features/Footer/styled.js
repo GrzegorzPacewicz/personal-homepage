@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   text-align: left;
-  width: 60%;
-  margin: 120px 0 0 0;
+
+  margin: 120px 8px 0 8px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 48px;
+  }
 `;
 
 export const FooterTitle = styled.p`
