@@ -1,4 +1,8 @@
 export const email = "g.pacewicz@gmail.com";
+export const facebook = "https://www.facebook.com/grzegorz.pacewicz/";
+export const github = "https://github.com/GrzegorzPacewicz";
+export const youtube =
+  "https://www.youtube.com/channel/UCAOQlshoDZ8rYCYe-6mqjhw";
 
 export const personalInfo = [
   {
@@ -32,13 +36,6 @@ export const personalInfo = [
   {
     title: "What I want to learn next",
     icon: "🚀",
-    list: [
-      "Typescript",
-      "Node.js",
-      "Unit testing",
-      "React Context",
-      "Cypress",
-    ],
+    list: ["Typescript", "Node.js", "Unit testing", "React Context", "Cypress"],
   },
-  
 ];
