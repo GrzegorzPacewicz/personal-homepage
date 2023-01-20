@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { borderRadius, boxShadow } from "../theme/propsCSS";
+import { borderRadius, boxShadow } from "../theme/theme";
 
 export const TileWrapper = styled.div`
   background: ${({ theme }) => theme.color.white};
@@ -62,6 +62,12 @@ export const Description = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   flex-grow: 1;
   order: 1;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+  }
 `;
 
 export const Demo = styled(Description)`
