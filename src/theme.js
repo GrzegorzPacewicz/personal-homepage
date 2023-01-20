@@ -5,8 +5,8 @@ export const theme = {
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     mineShaft: "#252525",
-    scienceBlue: "#0366D6"
-
+    scienceBlue: "#0366D6",
+    githubTileHover: "rgba(3, 102, 214, 0.5)",
   },
   breakpoint: {
     mobile: 320,
