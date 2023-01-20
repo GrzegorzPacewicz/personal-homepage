@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { borderRadius, boxShadow } from "../propsCSS";
+import { borderRadius, boxShadow } from "../theme/propsCSS";
 
 export const TileWrapper = styled.div`
   background: ${({ theme }) => theme.color.white};
