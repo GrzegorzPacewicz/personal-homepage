@@ -13,6 +13,7 @@ export const FooterTitle = styled.p`
   line-height: 1.3;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.slateGray};
+  margin-bottom: 24px;
 `;
 
 export const Email = styled.a`
@@ -23,7 +24,6 @@ export const Email = styled.a`
   letter-spacing: 0.05em;
   text-decoration: none;
   //
-  margin-top: 24px;
   transition: color 0.3s;
 
   &:hover {
