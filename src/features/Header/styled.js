@@ -53,12 +53,15 @@ export const Name = styled.h1`
 
 export const Description = styled.p`
   font-weight: 400;
-  font-style: normal;
-  font: "Inter";
-  font-size: 20px;
-  line-height: 140%;
+   font-size: 20px;
+  line-height: 1.4;
   margin: 0 0 32px 0;
+  text-align: justify;
   color: ${({ theme }) => theme.color.slateGray};
+ @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+font-size: 17px;
+  }
+
 `;
 
 export const EmailLink = styled.a`

@@ -19,6 +19,13 @@ import { email } from "../personalInfo";
 
 const Header = () => (
   <HeaderWrapper>
+    {" "}
+    <ThemeSwitch>
+      <BackgroundText>Dark mode off</BackgroundText>
+      <ThemeSwitchButton>
+        <LightTheme src={light} alt="" />
+      </ThemeSwitchButton>
+    </ThemeSwitch>
     <Photo src={image} alt="Grzegorza Pacewicza Photo" />
     <Details>
       <ThisIs>This is</ThisIs>
@@ -32,12 +39,6 @@ const Header = () => (
         Hire me
       </EmailLink>{" "}
     </Details>
-    <ThemeSwitch>
-      <BackgroundText>Dark mode off</BackgroundText>
-      <ThemeSwitchButton>
-        <LightTheme src={light} alt="" />
-      </ThemeSwitchButton>
-    </ThemeSwitch>
   </HeaderWrapper>
 );
 
