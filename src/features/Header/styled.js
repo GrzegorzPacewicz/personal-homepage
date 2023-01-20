@@ -28,6 +28,12 @@ export const Photo = styled.img`
   padding: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 13px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 200px;
     height: 200px;
     margin-bottom: 13px;

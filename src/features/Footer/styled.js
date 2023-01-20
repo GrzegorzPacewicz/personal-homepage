@@ -29,6 +29,13 @@ export const Email = styled.a`
   &:hover {
     filter: brightness(120%);
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 12px;
+  }
 `;
 
 export const Content = styled.p`
