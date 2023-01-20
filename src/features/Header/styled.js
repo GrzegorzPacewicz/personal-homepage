@@ -5,11 +5,20 @@ export const HeaderWrapper = styled.header`
   display: grid;
   grid-template-columns: auto 4fr auto;
   margin-bottom: 64px;
+  margin-top: 119px;
+  margin-bottom: 72px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: 1fr;
-    margin-bottom: 56px;
+    margin-top: 32px;
+    margin-bottom: 0px;
   }
+/* 
+  @media (max-width:${({theme})=> theme.breakpoint.large}px){
+        grid-template-columns: auto auto;
+        margin-top: 32px;
+        margin-bottom: 72px;
+    } */
 `;
 
 export const Photo = styled.img`
@@ -21,6 +30,7 @@ export const Photo = styled.img`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 200px;
     height: 200px;
+    margin-bottom: 13px;
   }
 `;
 
@@ -53,15 +63,14 @@ export const Name = styled.h1`
 
 export const Description = styled.p`
   font-weight: 400;
-   font-size: 20px;
+  font-size: 20px;
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-align: justify;
   color: ${({ theme }) => theme.color.slateGray};
- @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
-font-size: 17px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 17px;
   }
-
 `;
 
 export const EmailLink = styled.a`
