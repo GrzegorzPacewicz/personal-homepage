@@ -3,6 +3,7 @@ export const facebook = "https://www.facebook.com/grzegorz.pacewicz/";
 export const github = "https://github.com/GrzegorzPacewicz";
 export const youtube =
   "https://www.youtube.com/channel/UCAOQlshoDZ8rYCYe-6mqjhw";
+  export const linkedin = "https://www.linkedin.com/in/grzegorz-pacewicz-511355263/";
 
 export const personalInfo = [
   {

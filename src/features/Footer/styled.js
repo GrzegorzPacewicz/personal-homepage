@@ -50,6 +50,7 @@ export const Content = styled.p`
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.05em;
+  text-align: justify;
 `;
 
 export const IconsContainer = styled.div`

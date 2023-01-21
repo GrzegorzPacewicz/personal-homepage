@@ -1,7 +1,8 @@
-import { email, facebook, github, youtube } from "../personalInfo";
+import { email, facebook, github, youtube, linkedin } from "../personalInfo";
 import githubIcon from "../../common/mediaIcons/github.svg";
 import youtubeIcon from "../../common/mediaIcons/youtube.svg";
 import facebookIcon from "../../common/mediaIcons/facebook.svg";
+import linkedinIcon from "../../common/mediaIcons/linkedin.svg";
 import {
   FooterWrapper,
   FooterTitle,
@@ -27,12 +28,15 @@ const Footer = () => {
         <IconsContainer>
           <Link href={github}>
             <Icon src={githubIcon} alt="my github" />
+          </Link>{" "}
+          <Link href={facebook}>
+            <Icon src={facebookIcon} alt="my facebook" />
+          </Link>
+          <Link href={linkedin}>
+            <Icon src={linkedinIcon} alt="my linkedin" />
           </Link>
           <Link href={youtube}>
             <Icon src={youtubeIcon} alt="my youtube" />
-          </Link>
-          <Link href={facebook}>
-            <Icon src={facebookIcon} alt="my facebook" />
           </Link>
         </IconsContainer>
       </FooterWrapper>
