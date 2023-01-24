@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
   text-align: left;
   width: 60%;
-  margin: 120px 0;
+  margin: 120px 8px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin-top: 48px;
-    width: 100%;
+   
   }
 `;
 
@@ -33,8 +33,8 @@ export const Email = styled.a`
   &:hover {
     filter: brightness(120%);
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 18px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 16px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -45,12 +45,15 @@ export const Email = styled.a`
 export const Content = styled.p`
   color: ${({ theme }) => theme.color.mineShaft};
   margin: 24px 0 0 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.05em;
-  text-align: justify;
+  text-align: left;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 12px;
+  }
 `;
 
 export const IconsContainer = styled.div`
