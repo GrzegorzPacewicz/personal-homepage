@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { boxShadow, borderRadius } from "../../common/theme/theme";
 
 export const HeaderWrapper = styled.header`
   max-width: 1200px;
@@ -13,12 +14,6 @@ export const HeaderWrapper = styled.header`
     margin-top: 32px;
     margin-bottom: 0px;
   }
-/* 
-  @media (max-width:${({theme})=> theme.breakpoint.large}px){
-        grid-template-columns: auto auto;
-        margin-top: 32px;
-        margin-bottom: 72px;
-    } */
 `;
 
 export const Photo = styled.img`
@@ -85,8 +80,8 @@ export const EmailLink = styled.a`
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.scienceBlue};
   padding: 12px 16px;
-  border: 1px solid rgba(209, 213, 218, 0.3);
-  border-radius: 4px;
+  box-shadow: ${boxShadow};
+  border-radius: ${borderRadius};
   max-width: fit-content;
   margin: 0;
   gap: 16px;
@@ -98,45 +93,6 @@ export const EmailLink = styled.a`
   grid-template-columns: auto 1fr;
 `;
 
-export const ThemeSwitch = styled.div`
-  display: flex;
-  align-self: flex-start;
-  justify-self: flex-end;
-  gap: 16px;
-  align-items: center;
-  position: absolute;
-  transition: all 0.5s;
-`;
-
-export const ThemeSwitchButton = styled.div`
-  background-color: ${({ theme }) => theme.color.mercury};
-  border: 1px solid rgba(209, 213, 218, 0.3);
-  width: 47.06px;
-  height: 25.07px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
-
-export const BackgroundText = styled.p`
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3;
-  color: ${({ theme }) => theme.color.slateGray};
-  text-transform: uppercase;
-  display: grid;
-  align-content: center;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
-    display: none;
-  }
-`;
-
 export const Envelope = styled.img`
   margin: 0;
-`;
-
-export const LightTheme = styled.img`
-  padding: 2px;
 `;

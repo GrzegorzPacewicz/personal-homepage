@@ -7,25 +7,16 @@ import {
   Description,
   EmailLink,
   Envelope,
-  ThemeSwitchButton,
-  ThemeSwitch,
-  BackgroundText,
-  LightTheme,
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
-import light from "./images/light.svg";
 import { email } from "../personalInfo";
+import ThemeSwitch from "../ThemeSwitch";
 
 const Header = () => (
   <HeaderWrapper>
     {" "}
-    <ThemeSwitch>
-      <BackgroundText>Dark mode off</BackgroundText>
-      <ThemeSwitchButton>
-        <LightTheme src={light} alt="" />
-      </ThemeSwitchButton>
-    </ThemeSwitch>
+    <ThemeSwitch />
     <Photo src={image} alt="Grzegorza Pacewicza Photo" />
     <Details>
       <ThisIs>This is</ThisIs>
