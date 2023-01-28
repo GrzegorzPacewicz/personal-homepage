@@ -13,7 +13,7 @@ const ThemeSwitch = () => {
   return (
     <>
       <Wrapper>
-        <BackgroundText>Dark mode off</BackgroundText>
+        <BackgroundText>Dark mode {isDarkTheme ? "on" : "off"} </BackgroundText>
         <ThemeSwitchButton
           onClick={() => setIsDarkTheme(!isDarkTheme)}
           moveRight={isDarkTheme}
