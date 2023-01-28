@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const ThemeSwitchButton = styled.div`
   background-color: ${({ theme }) => theme.color.mercury};
-  border: 1px solid rgba(209, 213, 218, 0.3);
+  border: 1px solid ${({ theme }) => theme.color.slateGray};
   width: 48px;
   height: 25px;
   border-radius: 25%/50%;
@@ -29,8 +29,7 @@ export const BackgroundText = styled.p`
   line-height: 1.3;
   color: ${({ theme }) => theme.color.slateGray};
   text-transform: uppercase;
-  transform: 0.5s;
-  padding: 0 2px;
+  padding: 0 8px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     display: none;
