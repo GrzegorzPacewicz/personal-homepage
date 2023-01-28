@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { boxShadow, borderRadius } from "../theme/theme";
+import { boxShadow, borderRadius, divider } from "../theme/theme";
 
 export const SkillsWraper = styled.div`
   max-width: 1216px;
@@ -25,7 +25,7 @@ export const Divider = styled.div`
   height: 1px;
   margin-left: 32px;
   margin-right: 32px;
-  background: rgba(209, 213, 218, 0.3);
+  background: ${divider};
 `;
 export const List = styled.ul`
   list-style-type: none;
