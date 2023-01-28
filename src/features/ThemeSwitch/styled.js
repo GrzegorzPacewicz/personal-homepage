@@ -19,6 +19,7 @@ export const ThemeSwitchButton = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 2px;
 `;
 
 export const BackgroundText = styled.p`
@@ -35,43 +36,21 @@ export const BackgroundText = styled.p`
   }
 `;
 
-export const LightTheme = styled.img`
-  padding: 2px;
-`;
-
 export const SwitchElement = styled.img`
-    background-color: ${({ theme }) => theme.color.mineShaft};
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    padding: 2px;
-    transition: .5s;
-    ${({ moveRight }) => moveRight && css`
-        transform: translate(22px);
-        @media (max-width:${({ theme }) => theme.breakpoint.small}px){
-            transform: translate(0px);
-        }
-    `};
-`;
+  background-color: ${({ theme }) => theme.color.mineShaft};
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+  transition: 0.3s;
 
-export const Switch = styled.div`
-    width: 48px;
-    height: 25px;
-    border-radius: 25%/50%;
-    background-color: grey;
-    border: 1px solid dark;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2px;
-    
-    &:hover{
-        cursor: pointer;
-    }
-    ${({ isDarkTheme }) => isDarkTheme && css`
-        @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-            justify-content: flex-end;
-        }
+  ${({ moveRight }) =>
+    moveRight &&
+    css`
+      transform: translate(22px);
     `};
-    
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}px) {
+    transform: translate(22px);
+  }
 `;
