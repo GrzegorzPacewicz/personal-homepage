@@ -1,3 +1,20 @@
+const color = {
+  whiteLilac: "#FBFBFE",
+  white: "#FFFFFF",
+  slateGray: "#6E7E91",
+  mercury: "#E5E5E5",
+  mineShaft: "#252525",
+  scienceBlue: "#0366D6",
+  githubTileHover: "rgba(3, 102, 214, 0.5)",
+};
+
+const breakpoint = {
+  mobile: 320,
+  bigMobile: 480,
+  mobileMax: 767,
+  bigScreen: 1024,
+};
+
 export const theme = {
   color: {
     whiteLilac: "#FBFBFE",
@@ -14,6 +31,25 @@ export const theme = {
     mobileMax: 767,
     bigScreen: 1024,
   },
+};
+
+export const darkTheme = {
+  elementColor: {
+    background: color.eveningsee,
+    text: color.white,
+    border: color.white,
+    button: color.teal,
+    failure: color.redoragne,
+    input: color.black,
+    select: color.black,
+    switch: color.pastelgreen,
+    wheel: color.eveningsee,
+    switchbackground: color.pastelgreen,
+    icon: color.pastelgreen,
+    lineargradient: color.gradientdark,
+  },
+  color,
+  breakpoint,
 };
 
 export const boxShadow =
