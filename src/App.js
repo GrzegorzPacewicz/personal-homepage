@@ -7,6 +7,8 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./common/theme/theme";
 import { useSelector } from "react-redux";
 import {selectIsDarkTheme} from "./common/theme/themeSlice"
+import { GlobalStyle } from "./Globalstyle";
+import { Normalize } from "styled-normalize";
 
 function App() {
   // const dispatch = useDispatch();
@@ -14,6 +16,8 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
+      <GlobalStyle />
+      <Normalize />
       <AppContainer>
         <Header />
         <Skills />
