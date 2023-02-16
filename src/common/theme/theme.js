@@ -16,18 +16,23 @@ const breakpoint = {
 };
 
 export const theme = {
+  //this for temporary to remove
   color: {
-    background: color.whiteLilac,
-    white: "#FFFFFF",
+    background: color.white,
+    text: color.mineShaft,
+    thisis: color.slateGray,
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     mineShaft: "#252525",
     scienceBlue: "#0366D6",
     githubTileHover: "rgba(3, 102, 214, 0.5)",
   },
-//temporary usage
+
 elementColor: {
   background: color.whiteLilac,
+  text: color.mineShaft,
+  thisis: color.slateGray,
+  description: color.slateGray,
 },
 
   breakpoint: {
@@ -41,6 +46,9 @@ elementColor: {
 export const darkTheme = {
   elementColor: {
     background: color.mineShaft,
+    text: color.white,
+    thisis: color.white,
+    description: color.white,
   },
   color,
   breakpoint,
