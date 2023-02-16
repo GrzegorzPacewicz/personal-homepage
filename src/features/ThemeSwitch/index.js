@@ -6,17 +6,19 @@ import {
 } from "./styled";
 import light from "./images/light.svg";
 import dark from "./images/dark.svg";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsDarkTheme, toggleIsDarkTheme } from "../../common/theme/themeSlice";
 
 const ThemeSwitch = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const dispatch = useDispatch();
+  const isDarkTheme = useSelector(selectIsDarkTheme);
   return (
     <>
       <Wrapper>
         <BackgroundText>Dark mode {isDarkTheme ? "on" : "off"} </BackgroundText>
         <ThemeSwitchButton
-          onClick={() => setIsDarkTheme(!isDarkTheme)}
-          moveRight={isDarkTheme}
+          onClick={() => dispatch(toggleIsDarkTheme())}
+          title="change a theme"
         >
           <SwitchElement
             src={isDarkTheme ? dark : light}

@@ -15,6 +15,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "redux-saga": "^1.2.2",
+    "saga": "^4.0.0-alpha",
     "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7",
     "web-vitals": "^2.1.4"
