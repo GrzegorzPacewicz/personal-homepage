@@ -6,6 +6,7 @@ const color = {
   mineShaft: "#252525",
   scienceBlue: "#0366D6",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
+  semiDark: "#363636",
 };
 
 const breakpoint = {
@@ -16,40 +17,40 @@ const breakpoint = {
 };
 
 export const theme = {
-  //this for temporary to remove
-  color: {
-    background: color.white,
-    text: color.mineShaft,
-    thisis: color.slateGray,
-    slateGray: "#6E7E91",
-    mercury: "#E5E5E5",
-    mineShaft: "#252525",
-    scienceBlue: "#0366D6",
-    githubTileHover: "rgba(3, 102, 214, 0.5)",
-  },
-
 elementColor: {
-  background: color.whiteLilac,
-  text: color.mineShaft,
-  thisis: color.slateGray,
-  description: color.slateGray,
-},
+  site: {
+    background: color.whiteLilac,
+      },
+  header: {
+    text: color.mineShaft, 
+    description: color.slateGray,
+    },
+    skills: {
+      background: color.white,
+    },
 
-  breakpoint: {
-    mobile: 320,
-    bigMobile: 480,
-    mobileMax: 767,
-    bigScreen: 1024,
-  },
+ 
+},
+color,
+breakpoint,
 };
 
 export const darkTheme = {
-  elementColor: {
-    background: color.mineShaft,
-    text: color.white,
-    thisis: color.white,
-    description: color.white,
-  },
+  elementColor: 
+   {
+    site: {
+      background: color.mineShaft,
+     
+   
+    },
+  header: {
+      text: color.white,
+      description: color.white,
+},
+  skills: {
+    background: color.semiDark,
+  }
+ },
   color,
   breakpoint,
 };

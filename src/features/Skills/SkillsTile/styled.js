@@ -4,7 +4,7 @@ import { boxShadow, borderRadius, divider } from "../../../common/theme/theme";
 export const SkillsWraper = styled.div`
   max-width: 1216px;
   left: calc(50% - 1216px / 2 + 2px);
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.elementColor.skills.background};
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};
   padding-bottom: 32px;

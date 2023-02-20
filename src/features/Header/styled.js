@@ -51,7 +51,7 @@ export const ThisIs = styled.p`
   font-size: 12px;
   line-height: 1.3;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.elementColor.thisis};
+  color: ${({ theme }) => theme.elementColor.header.description};
   margin: 0 0 12px 0;
 `;
 
@@ -59,7 +59,7 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   margin: 0 0 36px 0;
-  color: ${({ theme }) => theme.elementColor.text};
+  color: ${({ theme }) => theme.elementColor.header.text};
 `;
 
 export const Description = styled.p`
@@ -68,7 +68,7 @@ export const Description = styled.p`
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-align: justify;
-  color: ${({ theme }) => theme.elementColor.description};
+  color: ${({ theme }) => theme.elementColor.header.description};
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 17px;
   }
