@@ -1,8 +1,8 @@
-import { email, facebook, github, youtube, linkedin } from "../personalInfo";
-import githubIcon from "../../common/mediaIcons/github.svg";
-import youtubeIcon from "../../common/mediaIcons/youtube.svg";
-import facebookIcon from "../../common/mediaIcons/facebook.svg";
-import linkedinIcon from "../../common/mediaIcons/linkedin.svg";
+import { email, facebook, github, youtube, linkedin } from "../../core/personalInfo";
+import githubIcon from "./mediaIcons/github.svg";
+import youtubeIcon from "./mediaIcons/youtube.svg";
+import facebookIcon from "./mediaIcons/facebook.svg";
+import linkedinIcon from "./mediaIcons/linkedin.svg";
 import {
   FooterWrapper,
   FooterTitle,

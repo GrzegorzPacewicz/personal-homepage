@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { boxShadow, borderRadius, divider } from "../theme/theme";
+import { boxShadow, borderRadius, divider } from "../../../common/theme/theme";
 
 export const SkillsWraper = styled.div`
   max-width: 1216px;

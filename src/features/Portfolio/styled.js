@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SubHeader } from "../../common/SubHeader/styled";
+import { SubHeader } from "../SubHeader/styled";
 
 export const PortfolioWrapper = styled.div`
   text-align: center;

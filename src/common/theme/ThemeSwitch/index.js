@@ -4,10 +4,10 @@ import {
   BackgroundText,
   SwitchElement,
 } from "./styled";
-import light from "./images/light.svg";
-import dark from "./images/dark.svg";
+import light from "./icons/light.svg";
+import dark from "./icons/dark.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsDarkTheme, toggleIsDarkTheme } from "../../common/theme/themeSlice";
+import { selectIsDarkTheme, toggleIsDarkTheme } from "../themeSlice";
 
 const ThemeSwitch = () => {
   const dispatch = useDispatch();

@@ -10,8 +10,8 @@ import {
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
-import { email } from "../personalInfo";
-import ThemeSwitch from "../ThemeSwitch";
+import { email } from "../../core/personalInfo";
+import ThemeSwitch from "../../common/theme/ThemeSwitch";
 
 const Header = () => (
   <HeaderWrapper>

@@ -5,8 +5,8 @@ import {
   PortfolioWrapper,
   TilesWrapper,
 } from "./styled";
-import logo from "../../common/mediaIcons/gitblue.svg";
-import GitHubTile from "../../common/GitHubTile/index";
+import logo from "./gitblue.svg";
+import GitHubTile from "./GitHubTile/index";
 
 const Portfolio = () => {
   return (

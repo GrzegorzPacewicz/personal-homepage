@@ -1,12 +1,12 @@
-import Header from "./features/Header";
-import Portfolio from "./features/Portfolio";
-import { AppContainer } from "./features/AppContainer/styled";
-import Skills from "./features/Skills";
-import Footer from "./features/Footer";
+import Header from "../features/Header";
+import Portfolio from "../features/Portfolio";
+import { AppContainer } from "../features/AppContainer/styled";
+import Skills from "../features/Skills";
+import Footer from "../features/Footer";
 import { ThemeProvider } from "styled-components";
-import { darkTheme, theme } from "./common/theme/theme";
+import { darkTheme, theme } from "../common/theme/theme";
 import { useSelector } from "react-redux";
-import {selectIsDarkTheme} from "./common/theme/themeSlice"
+import {selectIsDarkTheme} from "../common/theme/themeSlice"
 import { GlobalStyle } from "./Globalstyle";
 import { Normalize } from "styled-normalize";
 
