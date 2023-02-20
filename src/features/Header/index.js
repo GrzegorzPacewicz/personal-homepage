@@ -8,7 +8,7 @@ import {
   EmailLink,
   Envelope,
 } from "./styled";
-import image from "./images/author.jpg";
+import image from "./images/author2.jpg";
 import envelope from "./images/envelope.svg";
 import { email } from "../../core/personalInfo";
 import ThemeSwitch from "../../common/theme/ThemeSwitch";
