@@ -78,7 +78,7 @@ export const EmailLink = styled.a`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.scienceBlue};
+  background-color: ${({ theme }) => theme.elementColor.header.button};
   padding: 12px 16px;
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};

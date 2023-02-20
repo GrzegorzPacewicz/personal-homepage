@@ -41,7 +41,7 @@ export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.elementColor.skills.text};
   margin: 0 32px;
   line-height: 1.4;
   display: flex;
@@ -53,6 +53,6 @@ export const Point = styled.span`
   height: 9px;
   border-radius: 50%;
   margin-right: 16px;
-  background: ${({ theme }) => theme.color.scienceBlue};
+  background: ${({ theme }) => theme.elementColor.skills.point};
   flex-shrink: 0;
 `;
