@@ -11,7 +11,7 @@ import {
 import image from "./images/author2.jpg";
 import envelope from "./images/envelope.svg";
 import { email } from "../../core/personalInfo";
-import ThemeSwitch from "../../common/theme/ThemeSwitch";
+import ThemeSwitch from "../ThemeSwitch";
 
 const Header = () => (
   <HeaderWrapper>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { boxShadow, borderRadius } from "../../common/theme/theme";
+import { boxShadow, borderRadius } from "../../core/theme";
 
 export const HeaderWrapper = styled.header`
   max-width: 1200px;
