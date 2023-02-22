@@ -6,6 +6,7 @@ const color = {
   mineShaft: "#252525",
   semiDark: "#363636",
   scienceBlue: "#0366D6",
+  blue: "#2517EB",
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
 };
@@ -33,10 +34,15 @@ export const theme = {
     skills: {
       background: color.white,
       text: color.slateGray,
-      point: color.scienceBlue,
+      point: color.blue,
     },
     portfolio: {
-      logo: color.scienceBlue,
+      logo: color.blue,
+      background: color.white,
+      title: color.blue,
+      description: color.slateGray,
+      link: color.blue,
+      underline: color.blue,
     },
   },
   color,
@@ -63,6 +69,11 @@ export const darkTheme = {
     },
     portfolio: {
       logo: color.dodgerBlue,
+      background: color.semiDark,
+      title: color.white,
+      description: color.white,
+      link: color.dodgerBlue,
+      underline: color.dodgerBlue,
     },
   },
   color,
