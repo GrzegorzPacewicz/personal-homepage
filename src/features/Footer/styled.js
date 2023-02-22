@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as Logo } from "./mediaIcons/youtube.svg";
 
 export const FooterWrapper = styled.div`
   text-align: left;

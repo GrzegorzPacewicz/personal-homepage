@@ -13,8 +13,6 @@ import {
   IconsContainer,
   Link,
   Icon,
-  IconImg,
-  YTLogo,
 } from "./styled";
 import GitIcon from "./mediaIcons/GitIcon";
 import FacebookIcon from "./mediaIcons/Facebook";
