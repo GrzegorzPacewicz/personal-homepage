@@ -5,17 +5,20 @@ import {
   PortfolioWrapper,
   TilesWrapper,
 } from "./styled";
-import logo from "./gitblue.svg";
 import GitHubTile from "./GitHubTile/index";
+import GitIcon from "./GigIcon";
 
 const Portfolio = () => {
   return (
     <PortfolioWrapper>
-      <GitHubLogo src={logo} alt="GitHub Logo"></GitHubLogo>
+      <GitHubLogo>
+        {" "}
+        <GitIcon />
+      </GitHubLogo>
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
       <TilesWrapper>
-        <GitHubTile />
+        <GitHubTile /> <GitHubTile /> <GitHubTile /> <GitHubTile />
       </TilesWrapper>
     </PortfolioWrapper>
   );

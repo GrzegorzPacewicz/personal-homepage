@@ -8,7 +8,7 @@ const color = {
   scienceBlue: "#0366D6",
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
-  };
+};
 
 const breakpoint = {
   mobile: 320,
@@ -29,11 +29,14 @@ export const theme = {
     },
     subheader: {
       title: color.mineShaft,
-    }, 
+    },
     skills: {
       background: color.white,
       text: color.slateGray,
-      point: color.scienceBlue
+      point: color.scienceBlue,
+    },
+    portfolio: {
+      logo: color.scienceBlue,
     },
   },
   color,
@@ -57,7 +60,10 @@ export const darkTheme = {
     },
     subheader: {
       title: color.white,
-    }, 
+    },
+    portfolio: {
+      logo: color.dodgerBlue,
+    },
   },
   color,
   breakpoint,

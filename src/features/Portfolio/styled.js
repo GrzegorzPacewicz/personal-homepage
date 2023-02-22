@@ -13,8 +13,10 @@ export const PortfolioHeader = styled(SubHeader)`
   display: grid;
 `;
 
-export const GitHubLogo = styled.img`
-  margin: 0;
+export const GitHubLogo = styled.div`
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
 `;
 
 export const Lead = styled.p`
@@ -37,4 +39,3 @@ export const TilesWrapper = styled.div`
     grid-template-columns: 1fr;
   }
 `;
-

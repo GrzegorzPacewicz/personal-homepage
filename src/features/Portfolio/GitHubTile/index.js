@@ -14,49 +14,7 @@ const GitHubTile = () => {
           Demo: <Link href="https://link.demo.com"> https://link.demo.com</Link>
         </Demo>
         <Repo>
-          Repo: <Link href="https://link.demo.com">{" "} https://link.demo.com</Link>
-        </Repo>
-      </TileWrapper>
-      <TileWrapper>
-        <Title>Title</Title>
-        <Description>
-          Project description, e.g. website where you can search for favourite
-          movies and people. Project description, e.g. website where you can
-          search.
-        </Description>
-        <Demo>
-          Demo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
-        </Demo>
-        <Repo>
-          Repo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
-        </Repo>
-      </TileWrapper>{" "}
-      <TileWrapper>
-        <Title>Title</Title>
-        <Description>
-          Project description, e.g. website where you can search for favourite
-          movies and people. Project description, e.g. website where you can
-          search.
-        </Description>
-        <Demo>
-          Demo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
-        </Demo>
-        <Repo>
-          Repo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
-        </Repo>
-      </TileWrapper>{" "}
-      <TileWrapper>
-        <Title>Title</Title>
-        <Description>
-          Project description, e.g. website where you can search for favourite
-          movies and people. Project description, e.g. website where you can
-          search.
-        </Description>
-        <Demo>
-          Demo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
-        </Demo>
-        <Repo>
-          Repo: <Link href="https://link.demo.com"> https://link.demo.com</Link>{" "}
+          Repo: <Link href="https://link.demo.com"> https://link.demo.com</Link>
         </Repo>
       </TileWrapper>
     </>
