@@ -9,6 +9,11 @@ const color = {
   blue: "#2517EB",
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
+  // boxShadow:
+  //   "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+  // borderRadius: "4px",
+  // border: "rgba(209, 213, 218, 0.3)",
+  // divider: "rgba(209, 213, 218, 0.3)",
 };
 
 const breakpoint = {
@@ -44,6 +49,12 @@ export const theme = {
       link: color.blue,
       underline: color.blue,
     },
+    footer: {
+      intro: color.slateGray,
+      email: color.mineShaft,
+      text: color.mineShaft,
+      logo: color.mineShaft,
+    },
   },
   color,
   breakpoint,
@@ -74,6 +85,12 @@ export const darkTheme = {
       description: color.white,
       link: color.dodgerBlue,
       underline: color.dodgerBlue,
+    },
+    footer: {
+      intro: color.white,
+      email: color.white,
+      text: color.white,
+      logo: color.white,
     },
   },
   color,

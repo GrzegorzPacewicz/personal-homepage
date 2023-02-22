@@ -1,23 +1,31 @@
-import { email, facebook, github, youtube, linkedin } from "../../core/personalInfo";
-import githubIcon from "./mediaIcons/github.svg";
-import youtubeIcon from "./mediaIcons/youtube.svg";
-import facebookIcon from "./mediaIcons/facebook.svg";
-import linkedinIcon from "./mediaIcons/linkedin.svg";
+import {
+  email,
+  facebook,
+  github,
+  youtube,
+  linkedin,
+} from "../../core/personalInfo";
 import {
   FooterWrapper,
-  FooterTitle,
+  FooterIntro,
   Email,
   Content,
   IconsContainer,
   Link,
   Icon,
+  IconImg,
+  YTLogo,
 } from "./styled";
+import GitIcon from "./mediaIcons/GitIcon";
+import FacebookIcon from "./mediaIcons/Facebook";
+import LinkedInIcon from "./mediaIcons/LinkedIn";
+import YoutubeIcon from "./mediaIcons/Youtube";
 
 const Footer = () => {
   return (
     <>
       <FooterWrapper>
-        <FooterTitle>Let`s Talk</FooterTitle>
+        <FooterIntro>Let`s Talk</FooterIntro>
         <Email href={`mailto:${email}`}>{email}</Email>
         <Content>
           I’m always open to new projects whenever I have the time. If you have
@@ -27,16 +35,24 @@ const Footer = () => {
 
         <IconsContainer>
           <Link href={github}>
-            <Icon src={githubIcon} alt="my github" />
+            <Icon>
+              <GitIcon />
+            </Icon>
           </Link>{" "}
           <Link href={facebook}>
-            <Icon src={facebookIcon} alt="my facebook" />
+            <Icon>
+              <FacebookIcon />
+            </Icon>
           </Link>
           <Link href={linkedin}>
-            <Icon src={linkedinIcon} alt="my linkedin" />
+            <Icon>
+              <LinkedInIcon />{" "}
+            </Icon>
           </Link>
           <Link href={youtube}>
-            <Icon src={youtubeIcon} alt="my youtube" />
+            <Icon>
+              <YoutubeIcon />
+            </Icon>
           </Link>
         </IconsContainer>
       </FooterWrapper>

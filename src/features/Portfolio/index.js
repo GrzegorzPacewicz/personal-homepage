@@ -6,7 +6,7 @@ import {
   TilesWrapper,
 } from "./styled";
 import GitHubTile from "./GitHubTile/index";
-import GitIcon from "./GigIcon";
+import GitIcon from "./GitIcon";
 
 const Portfolio = () => {
   return (

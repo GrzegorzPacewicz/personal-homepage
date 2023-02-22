@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Logo } from "./mediaIcons/youtube.svg";
 
 export const FooterWrapper = styled.div`
   text-align: left;
@@ -6,28 +7,26 @@ export const FooterWrapper = styled.div`
   margin: 120px 8px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin-top: 48px;
-   
   }
 `;
 
-export const FooterTitle = styled.p`
+export const FooterIntro = styled.p`
   margin: 20px 0 0 0;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.elementColor.footer.intro};
   margin-bottom: 24px;
 `;
 
 export const Email = styled.a`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.elementColor.footer.email};
   font-weight: 900;
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-decoration: none;
-  //
   transition: color 0.3s;
 
   &:hover {
@@ -43,7 +42,7 @@ export const Email = styled.a`
 `;
 
 export const Content = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.elementColor.footer.text};
   margin: 24px 0 0 0;
   font-weight: 400;
   font-size: 18px;
@@ -64,7 +63,7 @@ export const IconsContainer = styled.div`
 
 export const Link = styled.a``;
 
-export const Icon = styled.img`
+export const Icon = styled.div`
   width: 48px;
   height: 48px;
 `;
