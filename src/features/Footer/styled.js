@@ -10,13 +10,12 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterIntro = styled.p`
-  margin: 20px 0 0 0;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.elementColor.footer.intro};
-  margin-bottom: 24px;
+  color: ${({theme}) => theme.elementColor.footer.intro};
+  margin: 20px 0 24px;
 `;
 
 export const Email = styled.a`
@@ -60,9 +59,21 @@ export const IconsContainer = styled.div`
   margin: 56px 0 110px 0;
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  color: ${({theme}) => theme.elementColor.footer.text};
+  text-decoration: none;
+  transition: color .3s;
+
+  `;
 
 export const Icon = styled.div`
   width: 48px;
   height: 48px;
+`;
+
+export const StyledIcon = (icon) => styled(icon)`  
+    width: 48px;
+    height: 48px;
+    fill: ${({ theme }) => theme.elementColor.footer.logo};
+    transition: fill .3s;
 `;
