@@ -1,10 +1,4 @@
-import {
-  email,
-  facebook,
-  github,
-  youtube,
-  linkedin,
-} from "../../core/personalInfo";
+import { email } from "../../core/personalInfo";
 import {
   FooterWrapper,
   FooterIntro,
@@ -12,13 +6,9 @@ import {
   Content,
   IconsContainer,
   Link,
-  Icon,
 } from "./styled";
-import GitIcon from "./mediaIcons/GitIcon";
-import FacebookIcon from "./mediaIcons/Facebook";
-import LinkedInIcon from "./mediaIcons/LinkedIn";
-import YoutubeIcon from "./mediaIcons/Youtube";
-import {socialMedia} from "./socialMedia";
+
+import { socialMedia } from "./socialMedia";
 
 const Footer = () => {
   return (
@@ -33,37 +23,17 @@ const Footer = () => {
         </Content>
 
         <IconsContainer>
-            {socialMedia.map(({ name, Icon, link }) =>
-                <Link
-                    key={name}
-                    href={link}
-                    title={name}
-                    rel="noreferrer"
-                    target="_blank">
-                    <Icon />
-                </Link>
-            )}
-
-          {/*<Link href={github}>*/}
-          {/*  <Icon>*/}
-          {/*    <GitIcon />*/}
-          {/*  </Icon>*/}
-          {/*</Link>{" "}*/}
-          {/*<Link href={facebook}>*/}
-          {/*  <Icon>*/}
-          {/*    <FacebookIcon />*/}
-          {/*  </Icon>*/}
-          {/*</Link>*/}
-          {/*<Link href={linkedin}>*/}
-          {/*  <Icon>*/}
-          {/*    <LinkedInIcon />{" "}*/}
-          {/*  </Icon>*/}
-          {/*</Link>*/}
-          {/*<Link href={youtube}>*/}
-          {/*  <Icon>*/}
-          {/*    <YoutubeIcon />*/}
-          {/*  </Icon>*/}
-          {/*</Link>*/}
+          {socialMedia.map(({ name, Icon, link }) => (
+            <Link
+              key={name}
+              href={link}
+              title={name}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Icon />
+            </Link>
+          ))}
         </IconsContainer>
       </FooterWrapper>
     </>
