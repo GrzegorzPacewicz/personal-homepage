@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SubHeader } from "../../common/SubHeader/styled";
+import { ReactComponent as githubIcon } from "./github.svg";
 
 export const PortfolioWrapper = styled.div`
   text-align: center;
@@ -13,10 +14,13 @@ export const PortfolioHeader = styled(SubHeader)`
   display: grid;
 `;
 
-export const GitHubLogo = styled.div`
-  margin: 0 auto;
+export const Link = styled.a`
+  text-decoration: none;
+`;
+export const GitHubIcon = styled(githubIcon)`
   width: 40px;
   height: 40px;
+  fill: ${({ theme }) => theme.elementColor.portfolio.icon};
 `;
 
 export const Lead = styled.p`

@@ -1,20 +1,25 @@
-import {
-  GitHubLogo,
-  Lead,
-  PortfolioHeader,
-  PortfolioWrapper,
-  TilesWrapper,
-} from "./styled";
+import {github} from "../../core/personalInfo";
 import GitHubTile from "./GitHubTile/index";
-import GitIcon from "./GitIcon";
+import {
+    GitHubIcon,
+    Lead,
+    PortfolioHeader,
+    PortfolioWrapper,
+    TilesWrapper,
+    Link,
+} from "./styled";
 
 const Portfolio = () => {
   return (
     <PortfolioWrapper>
-      <GitHubLogo>
-        {" "}
-        <GitIcon />
-      </GitHubLogo>
+        <Link
+            href={github}
+            rel="noreferrer"
+            target="_blank">
+            <GitHubIcon title="github"/>
+        </Link>
+
+
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
       <TilesWrapper>

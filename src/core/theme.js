@@ -42,7 +42,7 @@ export const theme = {
       point: color.blue,
     },
     portfolio: {
-      logo: color.blue,
+      icon: color.blue,
       background: color.white,
       title: color.blue,
       description: color.slateGray,
@@ -80,7 +80,7 @@ export const darkTheme = {
       title: color.white,
     },
     portfolio: {
-      logo: color.dodgerBlue,
+      icon: color.dodgerBlue,
       background: color.semiDark,
       title: color.white,
       description: color.white,
