@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.05em;
   margin: 82px 0 140px 0;
-  color: ${({ theme }) => theme.elementColor.header.text};
+  color: ${({ theme }) => theme.elementColor.portfolio.text};
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
     margin: 40px 0 70px 0;
   }

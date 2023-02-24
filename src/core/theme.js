@@ -48,6 +48,9 @@ export const theme = {
       description: color.slateGray,
       link: color.blue,
       underline: color.blue,
+      text: color.mineShaft,
+      danger: color.mineShaft,
+      button: color.scienceBlue,
     },
     footer: {
       intro: color.slateGray,
@@ -86,6 +89,9 @@ export const darkTheme = {
       description: color.white,
       link: color.dodgerBlue,
       underline: color.dodgerBlue,
+      text: color.white,
+      danger: color.white,
+      button: color.dodgerBlue,
     },
     footer: {
       intro: color.white,

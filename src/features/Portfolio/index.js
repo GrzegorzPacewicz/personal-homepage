@@ -9,6 +9,7 @@ import {
     Link,
 } from "./styled";
 import Loader from "./Loader";
+import Error from "./Error";
 
 const Portfolio = () => {
   return (
@@ -21,7 +22,8 @@ const Portfolio = () => {
         </Link>
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
-        <Loader></Loader>
+        <Loader />
+        <Error />
       <TilesWrapper>
         <GitHubTile /> <GitHubTile /> <GitHubTile /> <GitHubTile />
       </TilesWrapper>
