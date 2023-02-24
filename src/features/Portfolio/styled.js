@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SubHeader } from "../../common/SubHeader/styled";
-import { ReactComponent as githubIcon } from "./github.svg";
+import { ReactComponent as githubIcon } from "../../common/icons/github.svg";
 
 export const PortfolioWrapper = styled.div`
   text-align: center;

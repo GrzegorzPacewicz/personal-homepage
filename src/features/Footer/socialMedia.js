@@ -1,5 +1,5 @@
 import { github, facebook, linkedin, youtube } from "../../core/personalInfo";
-import { ReactComponent as githubIcon } from "./mediaIcons/github.svg";
+import { ReactComponent as githubIcon } from "../../common/icons/github.svg";
 import { ReactComponent as facebookIcon } from "./mediaIcons/facebook.svg";
 import { ReactComponent as linkedinIcon } from "./mediaIcons/linkedin.svg";
 import { ReactComponent as youtubeIcon } from "./mediaIcons/youtube.svg";

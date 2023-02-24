@@ -8,6 +8,7 @@ import {
     TilesWrapper,
     Link,
 } from "./styled";
+import Loader from "./Loader";
 
 const Portfolio = () => {
   return (
@@ -18,10 +19,9 @@ const Portfolio = () => {
             target="_blank">
             <GitHubIcon title="github"/>
         </Link>
-
-
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
+        <Loader></Loader>
       <TilesWrapper>
         <GitHubTile /> <GitHubTile /> <GitHubTile /> <GitHubTile />
       </TilesWrapper>
