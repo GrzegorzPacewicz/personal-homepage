@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { SubHeader } from "../../common/SubHeader/styled";
 import { ReactComponent as githubIcon } from "../../common/icons/github.svg";
 
@@ -39,7 +39,12 @@ export const TilesWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-template-columns: 1fr;
-  }
+  ${({ notSuccess }) => notSuccess && css`
+        grid-template-columns: auto;
+    `}
+
+  @media; (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px);
+        {
+          grid-template-columns: 1fr;
+        } 
 `;
