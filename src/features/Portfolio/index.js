@@ -29,7 +29,7 @@ const Portfolio = () => {
       <PortfolioHeader>Portfolio</PortfolioHeader>
       <Lead>My recent projects</Lead>
       <TilesWrapper
-            notSuccess={ reposStatus === !"success" }>
+            notSuccess={ reposStatus !== "success" }>
            {
               reposStatus === "error"
               ? <Error />
