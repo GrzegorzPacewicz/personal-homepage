@@ -1,4 +1,4 @@
-const link = "https://api.github.com/users/GrzegorzPacewicz/repos"
+const link = "https://api.github.com/users/GrzegorzPacewicz/repos?sort=created&direction=desc"
 
 export const getRepos = async () => {
     const response = await fetch(link);
