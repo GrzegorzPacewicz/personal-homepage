@@ -7,7 +7,6 @@ export const TileWrapper = styled.div`
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};
   padding: 56px;
-  text-align: left;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -16,6 +15,8 @@ export const TileWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  word-break: break-word;
+  text-align: justify;
 
   :hover {
     border: 6px solid ${({ theme }) => theme.color.githubTileHover};

@@ -5,6 +5,7 @@ import { ReactComponent as githubIcon } from "../../common/icons/github.svg";
 export const PortfolioWrapper = styled.div`
   text-align: center;
   margin: 72px 0;
+  word-break: break-word;
 `;
 
 export const PortfolioHeader = styled(SubHeader)`
@@ -43,8 +44,7 @@ export const TilesWrapper = styled.div`
         grid-template-columns: auto;
     `}
 
-  @media; (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px);
-        {
-          grid-template-columns: 1fr;
-        } 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+  }
 `;
