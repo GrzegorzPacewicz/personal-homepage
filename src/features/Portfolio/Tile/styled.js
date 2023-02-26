@@ -12,9 +12,6 @@ export const TileWrapper = styled.div`
   line-height: 1.4;
   letter-spacing: 0.05em;
   margin: 0 0 24px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   word-break: break-word;
   text-align: left;
 
@@ -38,10 +35,7 @@ export const Title = styled.h3`
   line-height: 1.4;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.elementColor.portfolio.title};
-  margin: 0;
-  margin-bottom: 24px;
-  order: 0;
-  flex-grow: 0;
+  margin: 0 0 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 16px;
@@ -54,10 +48,7 @@ export const Description = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
-  display: flex;
-  align-items: center;
   color: ${({ theme }) => theme.elementColor.portfolio.description};
-  order: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
@@ -65,23 +56,23 @@ export const Description = styled.p`
     margin: 0 0 8px 0;
   }
 `;
-
+export const LinksWrapper = styled.div`
+  display: grid;
+  gap: 8px;
+  word-break: break-all;
+`;
 export const Demo = styled(Description)`
   margin: 8px 0 0 0;
-  order: 2;
-  flex-grow: 0;
-  display: block;
+
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
     line-height: 1.2;
   }
 `;
 
+
 export const Repo = styled(Description)`
   margin: 8px 0 0 0;
-  order: 3;
-  flex-grow: 0;
-  display: block;
 `;
 
 export const Link = styled.a`
@@ -92,9 +83,6 @@ export const Link = styled.a`
   text-decoration: none;
   border-bottom: 1px solid ${({ theme }) => theme.color.githubTileHover};
   transition: filter 0.3s;
-
-  //
-  display: inline;
 
   &:hover {
     filter: brightness(120%);
