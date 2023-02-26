@@ -16,7 +16,7 @@ export const TileWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   word-break: break-word;
-  text-align: justify;
+  text-align: left;
 
   :hover {
     border: 6px solid ${({ theme }) => theme.color.githubTileHover};

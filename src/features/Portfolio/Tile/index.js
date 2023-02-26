@@ -1,12 +1,17 @@
 import { TileWrapper, Title, Description, Demo, Link, Repo } from "./styled";
 
 const GitHubTile = ({name, description, gitUrl, demo}) => {
+
+  const formattedName = (name[0].toUpperCase() + name.substring(1)).replaceAll(
+    "-",
+    " ");
   return (
     <>
       <TileWrapper title={`repository name: ${name}`}>
-        <Title>{name && name}</Title>
+        <Title>{formattedName}</Title>
         <Description>{description && description}</Description>
         {demo &&
+       
             <Demo>
                 Demo:
                 <Link
