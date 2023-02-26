@@ -40,7 +40,7 @@ const Portfolio = () => {
                             key={nanoid()}
                             description={repo.description}
                             name={repo.name}
-                            demo={repo.html_url}
+                            demo={repo.homepage}
                             gitUrl={repo.html_url}
                           />)
           }

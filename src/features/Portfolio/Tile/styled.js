@@ -12,7 +12,6 @@ export const TileWrapper = styled.div`
   line-height: 1.4;
   letter-spacing: 0.05em;
   margin: 0 0 24px 0;
-  word-break: break-word;
   text-align: left;
 
   :hover {
@@ -58,9 +57,10 @@ export const Description = styled.p`
 `;
 export const LinksWrapper = styled.div`
   display: grid;
-  gap: 8px;
-  word-break: break-all;
-`;
+  grid-template-columns: 4em 1fr;
+  
+  `;
+
 export const Demo = styled(Description)`
   margin: 8px 0 0 0;
 
@@ -70,9 +70,12 @@ export const Demo = styled(Description)`
   }
 `;
 
-
 export const Repo = styled(Description)`
   margin: 8px 0 0 0;
+`;
+
+export const LinkWrapper = styled.div`
+  padding: 8px 0;
 `;
 
 export const Link = styled.a`
@@ -81,6 +84,7 @@ export const Link = styled.a`
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.link};
   text-decoration: none;
+  word-break: break-word;  
   border-bottom: 1px solid ${({ theme }) => theme.color.githubTileHover};
   transition: filter 0.3s;
 
