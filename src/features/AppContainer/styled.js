@@ -5,4 +5,5 @@ export const AppContainer = styled.div`
   margin: 0 auto;
   padding: 0 8px;
   background-color: ${({ theme }) => theme.elementColor.background};
+  transition: background 2s linear, color 2s linear;
 `;

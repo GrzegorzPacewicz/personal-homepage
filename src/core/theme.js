@@ -9,6 +9,7 @@ const color = {
   blue: "#2517EB",
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
+  anakiwa: "#8CC2FF",
   // boxShadow:
   //   "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
   // borderRadius: "4px",
@@ -32,6 +33,7 @@ export const theme = {
       text: color.mineShaft,
       description: color.slateGray,
       button: color.scienceBlue,
+      link: color.anakiwa,
     },
     subheader: {
       title: color.mineShaft,

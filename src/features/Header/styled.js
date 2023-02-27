@@ -91,6 +91,17 @@ export const EmailLink = styled.a`
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr;
+
+  &:hover{
+    box-shadow: 
+    2px -2px 0 ${({ theme }) => theme.elementColor.header.link}, 
+    -2px 2px 0${({ theme }) => theme.elementColor.header.link}, 
+    2px 2px 0 ${({ theme }) => theme.elementColor.header.link}, 
+    -2px -2px 0 ${({ theme }) => theme.elementColor.header.link};
+  }
+  &:focus{
+    box-shadow: inset 0 2px 0 rgba(20, 70, 32, 0.2);
+  }
 `;
 
 export const Envelope = styled.img`
