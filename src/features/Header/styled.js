@@ -7,12 +7,11 @@ export const HeaderWrapper = styled.header`
   grid-template-columns: auto 4fr auto;
   margin-bottom: 64px;
   margin-top: 119px;
-  margin-bottom: 72px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+ 
+   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: 1fr;
     margin-top: 32px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 `;
 
@@ -95,12 +94,13 @@ export const EmailLink = styled.a`
   &:hover{
     box-shadow: 
     2px -2px 0 ${({ theme }) => theme.elementColor.header.link}, 
-    -2px 2px 0${({ theme }) => theme.elementColor.header.link}, 
+    -2px 2px 0 ${({ theme }) => theme.elementColor.header.link}, 
     2px 2px 0 ${({ theme }) => theme.elementColor.header.link}, 
     -2px -2px 0 ${({ theme }) => theme.elementColor.header.link};
   }
   &:focus{
     box-shadow: inset 0 2px 0 rgba(20, 70, 32, 0.2);
+    border-radius: ${borderRadius};
   }
 `;
 
