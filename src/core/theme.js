@@ -10,6 +10,7 @@ const color = {
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
   anakiwa: "#8CC2FF",
+  shipCove: "#6D93BE"
   // boxShadow:
   //   "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
   // borderRadius: "4px",
@@ -75,6 +76,7 @@ export const darkTheme = {
       text: color.white,
       description: color.white,
       button: color.dodgerBlue,
+      link: color.shipCove,
     },
     skills: {
       background: color.semiDark,
