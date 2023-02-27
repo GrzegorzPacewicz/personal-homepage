@@ -58,7 +58,17 @@ export const Description = styled.p`
 export const LinksWrapper = styled.div`
   display: grid;
   grid-template-columns: 4em 1fr;
-  
+  margin: 24px 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: ${({ theme }) => theme.elementColor.portfolio.description};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 16px 0 0 0;
+     }
   `;
 
 export const Demo = styled(Description)`
@@ -74,9 +84,9 @@ export const Repo = styled(Description)`
   margin: 8px 0 0 0;
 `;
 
-export const LinkWrapper = styled.div`
-  padding: 8px 0;
-`;
+export const LinkWrapper = styled.dd`
+  margin: 0;
+ `;
 
 export const Link = styled.a`
   font-weight: 400;

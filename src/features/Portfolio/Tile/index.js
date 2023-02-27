@@ -1,4 +1,4 @@
-import {TileWrapper, Title, Description, Demo, Link, Repo, LinksWrapper, LinkWrapper} from "./styled";
+import {TileWrapper, Title, Description, Link, LinksWrapper, LinkWrapper} from "./styled";
 
 const GitHubTile = ({name, description, gitUrl, demo}) => {
 
@@ -11,19 +11,19 @@ const GitHubTile = ({name, description, gitUrl, demo}) => {
         <Title>{formattedName}</Title>
         <Description>{description && description}</Description>
           {demo && <LinksWrapper>
-            <Demo>Demo:</Demo>
+            <dt>Demo:</dt>
             <LinkWrapper>
                 <Link
-                href={demo && ` https://grzegorzpacewicz.github.io/${name}`}
+                href={demo}
                 target="_blank"
                 rel="noreferrer"
                 >
-                {demo && ` https://grzegorzpacewicz.github.io/${name}`}
+                {demo}
                 </Link>
             </LinkWrapper>
         </LinksWrapper>}
           {gitUrl && <LinksWrapper>
-            <Repo>Repo:</Repo>
+            <dt>Repo:</dt>
               <LinkWrapper>
                   <Link
                   href={gitUrl}
