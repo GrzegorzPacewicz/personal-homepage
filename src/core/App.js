@@ -9,7 +9,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {selectIsDarkTheme} from "../features/ThemeSwitch/themeSlice"
 import { GlobalStyle } from "./Globalstyle";
 import { Normalize } from "styled-normalize";
-import {fetchRepos} from "../common/github/githubSlice";
+import {fetchRepos} from "../features/Portfolio/githubSlice";
 import {useEffect} from "react";
 
 function App() {

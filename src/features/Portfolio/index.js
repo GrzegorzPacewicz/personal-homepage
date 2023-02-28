@@ -11,7 +11,7 @@ import {
 import Loader from "./Loader";
 import Error from "./Error";
 import {useSelector} from "react-redux";
-import {selectRepos, selectReposStatus} from "../../common/github/githubSlice";
+import {selectRepos, selectReposStatus} from "./githubSlice";
 import {nanoid} from "@reduxjs/toolkit";
 
 const Portfolio = () => {
