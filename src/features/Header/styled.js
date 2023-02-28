@@ -7,7 +7,8 @@ export const HeaderWrapper = styled.header`
   grid-template-columns: auto 4fr auto;
   margin-bottom: 64px;
   margin-top: 119px;
- 
+  transition: background 1s linear, color 1s linear;
+  
    @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: 1fr;
     margin-top: 32px;
@@ -52,6 +53,7 @@ export const ThisIs = styled.p`
   text-transform: uppercase;
   color: ${({ theme }) => theme.elementColor.header.description};
   margin: 0 0 12px 0;
+  transition: background 1s linear, color 1s linear;
 `;
 
 export const Name = styled.h1`
@@ -73,6 +75,7 @@ export const Description = styled.p`
   margin: 0 0 32px 0;
   text-align: justify;
   color: ${({ theme }) => theme.elementColor.header.description};
+  transition: background 1s linear, color 1s linear;
   
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 17px;
@@ -91,7 +94,7 @@ export const EmailLink = styled.a`
   margin: 0;
   gap: 16px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s, background 1s linear, color 1s linear;;
   letter-spacing: 0.05em;
   display: grid;
   align-items: center;

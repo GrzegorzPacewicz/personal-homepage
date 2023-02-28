@@ -6,8 +6,8 @@ export const PortfolioWrapper = styled.div`
   text-align: center;
   margin: 72px 0;
   word-break: break-word;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+  
+    @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     margin: 60px 0;
   }
 
@@ -29,6 +29,7 @@ export const Link = styled.a`
 export const GitHubIcon = styled(githubIcon)`
   width: 40px;
   height: 40px;
+  transition: background 1s linear, color 1s linear;
   fill: ${({ theme }) => theme.elementColor.portfolio.icon};
 `;
 
@@ -38,6 +39,7 @@ export const Lead = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.mineShaft};
+  transition: background 1s linear, color 1s linear;
   margin: 0;
   padding-bottom: 24px;
 `;

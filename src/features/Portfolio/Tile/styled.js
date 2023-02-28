@@ -13,6 +13,7 @@ export const TileWrapper = styled.div`
   letter-spacing: 0.05em;
   margin: 0 0 24px 0;
   text-align: left;
+  transition: background 1s linear, color 1s linear;
 
   :hover {
     border: 6px solid ${({ theme }) => theme.color.githubTileHover};
@@ -35,6 +36,7 @@ export const Title = styled.h3`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.elementColor.portfolio.title};
   margin: 0 0 24px;
+  transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 16px;
@@ -48,6 +50,7 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.description};
+  transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 17px;
@@ -67,6 +70,7 @@ export const LinksWrapper = styled.div`
   font-size: 18px;
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.description};
+  transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 17px;
@@ -105,11 +109,11 @@ export const Link = styled.a`
   font-size: 18px;
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.link};
+  transition: filter 0.3s, background 1s linear, color 1s linear;
   text-decoration: none;
   word-break: break-word;  
   border-bottom: 1px solid ${({ theme }) => theme.color.githubTileHover};
-  transition: filter 0.3s;
-
+ 
   &:hover {
     filter: brightness(120%);
   }

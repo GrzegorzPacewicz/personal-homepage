@@ -10,6 +10,7 @@ export const SubHeader = styled.h2`
   color: ${({ theme }) => theme.elementColor.subheader.title};
   display: flex;
   align-content: center;
+  transition: background 1s linear, color 1s linear;
   
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 26px;
