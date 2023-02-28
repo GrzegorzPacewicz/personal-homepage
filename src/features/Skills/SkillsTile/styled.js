@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { boxShadow, borderRadius, divider } from "../../../core/theme";
 
-export const SkillsWraper = styled.div`
+export const SkillsWrapper = styled.div`
   max-width: 1216px;
   left: calc(50% - 1216px / 2 + 2px);
   background: ${({ theme }) => theme.elementColor.skills.background};
@@ -18,7 +18,16 @@ export const Icon = styled.span`
   text-align: center;
   letter-spacing: 0.05em;
   padding-left: 16px;
-`;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  `;
 
 export const Divider = styled.div`
   max-width: 1151px;
@@ -46,6 +55,12 @@ export const ListItem = styled.li`
   line-height: 1.4;
   display: flex;
   align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
 `;
 
 export const Point = styled.span`

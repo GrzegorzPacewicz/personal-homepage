@@ -6,8 +6,18 @@ export const SubHeader = styled.h2`
   line-height: 36px;
   text-align: left;
   letter-spacing: 0.05em;
-  padding: 32px 32px 0px 32px;
+  padding: 32px 32px 0 32px;
   color: ${({ theme }) => theme.elementColor.subheader.title};
   display: flex;
   align-content: center;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;

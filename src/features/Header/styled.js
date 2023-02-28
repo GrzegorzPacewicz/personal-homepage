@@ -59,6 +59,11 @@ export const Name = styled.h1`
   font-size: 38px;
   margin: 0 0 36px 0;
   color: ${({ theme }) => theme.elementColor.header.text};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 27px;
+  }
 `;
 
 export const Description = styled.p`
@@ -68,7 +73,8 @@ export const Description = styled.p`
   margin: 0 0 32px 0;
   text-align: justify;
   color: ${({ theme }) => theme.elementColor.header.description};
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 17px;
   }
 `;
@@ -91,6 +97,12 @@ export const EmailLink = styled.a`
   align-items: center;
   grid-template-columns: auto 1fr;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+    gap: 12px;
+  }
+
   &:hover{
     box-shadow: 
     2px -2px 0 ${({ theme }) => theme.elementColor.header.link}, 
@@ -106,4 +118,11 @@ export const EmailLink = styled.a`
 
 export const Envelope = styled.img`
   margin: 0;
+  height: 20px;
+  width: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    height: 14px;
+    };
 `;
+

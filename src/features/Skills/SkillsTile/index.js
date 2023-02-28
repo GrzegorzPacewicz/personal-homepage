@@ -3,7 +3,7 @@ import {
   Divider,
   ListItem,
   List,
-  SkillsWraper,
+  SkillsWrapper,
   Icon,
   Point,
 } from "./styled";
@@ -11,7 +11,7 @@ import {
 
 const SkillsTile = ({ title, icon, list }) => {
   return (
-    <SkillsWraper>
+    <SkillsWrapper>
       <SubHeader>
         {title}
         <Icon>{icon}</Icon>
@@ -25,7 +25,7 @@ const SkillsTile = ({ title, icon, list }) => {
           </ListItem>
         ))}
       </List>
-    </SkillsWraper>
+    </SkillsWrapper>
   );
 };
 

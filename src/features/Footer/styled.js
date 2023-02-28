@@ -5,7 +5,8 @@ export const FooterWrapper = styled.div`
   width: 60%;
   margin: 120px 8px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin-top: 48px;
+    margin: 48px 8px; 
+    width: 100%;
   }
 `;
 
@@ -15,14 +16,22 @@ export const FooterIntro = styled.p`
   line-height: 1.3;
   text-transform: uppercase;
   color: ${({ theme }) => theme.elementColor.footer.intro};
-  margin: 20px 0 24px;
-`;
+  margin: 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+     margin: 16px 0;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    margin: 12px 0;
+  }
+  `;
 
 export const Email = styled.a`
   color: ${({ theme }) => theme.elementColor.footer.email};
   font-weight: 900;
   font-size: 32px;
-  line-height: 1.2;
+  line-height: 39px;
   letter-spacing: 0.05em;
   text-decoration: none;
   transition: color 0.3s;
@@ -30,12 +39,14 @@ export const Email = styled.a`
   &:hover {
     filter: brightness(120%);
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
-    font-size: 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    font-size: 12px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 16px;
+    line-height: 22px;
   }
 `;
 
@@ -49,7 +60,8 @@ export const Content = styled.p`
   text-align: left;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
-    font-size: 12px;
+    font-size: 14px;
+    margin: 12px 0 0 0;
   }
 `;
 
@@ -57,6 +69,12 @@ export const IconsContainer = styled.div`
   display: flex;
   gap: 24px;
   margin: 56px 0 110px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    margin: 40px 0;
+  }
+  
 `;
 
 export const Link = styled.a`

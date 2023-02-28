@@ -6,6 +6,14 @@ export const PortfolioWrapper = styled.div`
   text-align: center;
   margin: 72px 0;
   word-break: break-word;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    margin: 60px 0;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    margin: 48px 0;
+  }
 `;
 
 export const PortfolioHeader = styled(SubHeader)`

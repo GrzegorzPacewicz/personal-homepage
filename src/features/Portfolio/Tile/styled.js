@@ -49,6 +49,10 @@ export const Description = styled.p`
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.description};
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 17px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
     line-height: 1.2;
@@ -63,6 +67,10 @@ export const LinksWrapper = styled.div`
   font-size: 18px;
   line-height: 1.4;
   color: ${({ theme }) => theme.elementColor.portfolio.description};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 17px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
@@ -86,7 +94,11 @@ export const Repo = styled(Description)`
 
 export const LinkWrapper = styled.dd`
   margin: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 17px;
+  }
  `;
+
 
 export const Link = styled.a`
   font-weight: 400;
@@ -101,7 +113,10 @@ export const Link = styled.a`
   &:hover {
     filter: brightness(120%);
   }
-
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+    font-size: 17px;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
     line-height: 1.2;
