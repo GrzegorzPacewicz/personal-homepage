@@ -7,12 +7,12 @@ export const Wrapper = styled.div`
   gap: 16px;
   align-items: center;
   position: absolute;
-  transition: all 1s;
+  transition: all 0.5s;
 `;
 
 export const ThemeSwitchButton = styled.div`
-  background-color: ${({ theme }) => theme.color.mercury};
-  border: 1px solid ${({ theme }) => theme.color.slateGray};
+  background-color: ${({ theme }) => theme.elementColor.switchButton.background};
+  border: 1px solid ${({ theme }) => theme.elementColor.switchButton.border};
   transition: background 1s linear, color 1s linear;
   width: 48px;
   height: 25px;
@@ -28,7 +28,7 @@ export const BackgroundText = styled.p`
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.elementColor.switchButton.text};
   text-transform: uppercase;
   padding: 0 8px;
   transition: background 1s linear, color 1s linear;

@@ -10,12 +10,8 @@ const color = {
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
   anakiwa: "#8CC2FF",
-  shipCove: "#6D93BE"
-  // boxShadow:
-  //   "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
-  // borderRadius: "4px",
-  // border: "rgba(209, 213, 218, 0.3)",
-  // divider: "rgba(209, 213, 218, 0.3)",
+  shipCove: "#6D93BE",
+  doveGray: "#6D6D6D",
 };
 
 const breakpoint = {
@@ -35,6 +31,11 @@ export const theme = {
       description: color.slateGray,
       button: color.scienceBlue,
       link: color.anakiwa,
+    },
+    switchButton: {
+      background: color.mercury,
+      border: color.slateGray,
+      text: color.slateGray,
     },
     subheader: {
       title: color.mineShaft,
@@ -77,6 +78,12 @@ export const darkTheme = {
       description: color.white,
       button: color.dodgerBlue,
       link: color.shipCove,
+    },
+    switchButton: {
+      background: color.doveGray,
+      border: color.white,
+      text: color.white,
+
     },
     skills: {
       background: color.semiDark,

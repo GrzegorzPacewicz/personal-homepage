@@ -17,6 +17,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         background-color: ${({ theme }) => theme.elementColor.site.background};
-        transition: background 1s linear, color 1s linear;
+        transition: background 0.5s linear, color 0.5s linear;
     }
 `;
