@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
   text-align: left;
   width: 60%;
-  margin: 120px 8px;
+  margin: 120px 8px 110px;
   transition: background 1s linear, color 1s linear;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin: 48px 8px; 
+    margin: 48px 8px 30px; 
     width: 100%;
   }
 `;
