@@ -8,8 +8,8 @@ export const HeaderWrapper = styled.header`
   margin-bottom: 64px;
   margin-top: 119px;
   transition: background 1s linear, color 1s linear;
-  
-   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: 1fr;
     margin-top: 32px;
     margin-bottom: 0;
@@ -62,9 +62,12 @@ export const Name = styled.h1`
   margin: 0 0 36px 0;
   color: ${({ theme }) => theme.elementColor.header.text};
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 28px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
-    font-size: 14px;
-    line-height: 27px;
+    font-size: 22px;
   }
 `;
 
@@ -76,7 +79,7 @@ export const Description = styled.p`
   text-align: justify;
   color: ${({ theme }) => theme.elementColor.header.description};
   transition: background 1s linear, color 1s linear;
-  
+
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 17px;
   }
@@ -94,7 +97,7 @@ export const EmailLink = styled.a`
   margin: 0;
   gap: 16px;
   text-decoration: none;
-  transition: 0.3s, background 1s linear, color 1s linear;;
+  transition: 0.3s, background 1s linear, color 1s linear;
   letter-spacing: 0.05em;
   display: grid;
   align-items: center;
@@ -106,14 +109,13 @@ export const EmailLink = styled.a`
     gap: 12px;
   }
 
-  &:hover{
-    box-shadow: 
-    2px -2px 0 ${({ theme }) => theme.elementColor.header.link}, 
-    -2px 2px 0 ${({ theme }) => theme.elementColor.header.link}, 
-    2px 2px 0 ${({ theme }) => theme.elementColor.header.link}, 
-    -2px -2px 0 ${({ theme }) => theme.elementColor.header.link};
+  &:hover {
+    box-shadow: 2px -2px 0 ${({ theme }) => theme.elementColor.header.link},
+      -2px 2px 0 ${({ theme }) => theme.elementColor.header.link},
+      2px 2px 0 ${({ theme }) => theme.elementColor.header.link},
+      -2px -2px 0 ${({ theme }) => theme.elementColor.header.link};
   }
-  &:focus{
+  &:focus {
     box-shadow: inset 0 2px 0 rgba(20, 70, 32, 0.2);
     border-radius: ${borderRadius};
   }
@@ -126,6 +128,5 @@ export const Envelope = styled.img`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     height: 14px;
-    };
+  } ;
 `;
-
