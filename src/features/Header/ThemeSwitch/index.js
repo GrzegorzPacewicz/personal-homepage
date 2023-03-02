@@ -7,7 +7,7 @@ import {
 import light from "./icons/light.svg";
 import dark from "./icons/dark.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsDarkTheme, toggleIsDarkTheme } from "../ThemeSwitch/themeSlice";
+import { selectIsDarkTheme, toggleIsDarkTheme } from "./themeSlice";
 
 const ThemeSwitch = () => {
   const dispatch = useDispatch();

@@ -8,10 +8,10 @@ import {
   EmailLink,
   Envelope,
 } from "./styled";
-import image from "./images/author2.jpg";
+import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
 import { email } from "../../core/personalInfo";
-import ThemeSwitch from "../ThemeSwitch";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => (
   <HeaderWrapper>

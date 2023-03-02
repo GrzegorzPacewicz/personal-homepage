@@ -1,5 +1,5 @@
 import {useSelector} from "react-redux";
-import {selectIsDarkTheme} from "../../ThemeSwitch/themeSlice";
+import {selectIsDarkTheme} from "../../Header/ThemeSwitch/themeSlice";
 import {github} from "../../../core/personalInfo";
 import dangerBlack from "./dangerBlack.svg"
 import dangerLight from "./dangerLight.svg"

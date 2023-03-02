@@ -6,7 +6,7 @@ import Footer from "../features/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./theme";
 import {useDispatch, useSelector} from "react-redux";
-import {selectIsDarkTheme} from "../features/ThemeSwitch/themeSlice"
+import {selectIsDarkTheme} from "../features/Header/ThemeSwitch/themeSlice"
 import { GlobalStyle } from "./Globalstyle";
 import { Normalize } from "styled-normalize";
 import {fetchRepos} from "../features/Portfolio/githubSlice";
