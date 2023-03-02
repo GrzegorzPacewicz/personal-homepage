@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.f5de804b.js",
+    "main.js": "/personal-homepage/static/js/main.e75c335a.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
-    "static/media/author2.jpg": "/personal-homepage/static/media/author2.d401da449fe013d80495.jpg",
+    "static/media/author.jpg": "/personal-homepage/static/media/author.d401da449fe013d80495.jpg",
     "static/media/light.svg": "/personal-homepage/static/media/light.9bde318e1490f0ca8d9b4a578810cddd.svg",
     "static/media/dark.svg": "/personal-homepage/static/media/dark.ad016abb30b77419e477a7e8e1ae8293.svg",
     "static/media/github.svg": "/personal-homepage/static/media/github.e6f3340c210bab781693b3973624fd54.svg",
@@ -14,10 +14,10 @@
     "static/media/linkedin.svg": "/personal-homepage/static/media/linkedin.f9055716254578d11b9d7514c029a070.svg",
     "static/media/facebook.svg": "/personal-homepage/static/media/facebook.8dffcd1c6f859e725ca42766eacf9e83.svg",
     "static/media/spinner.svg": "/personal-homepage/static/media/spinner.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
-    "main.f5de804b.js.map": "/personal-homepage/static/js/main.f5de804b.js.map",
+    "main.e75c335a.js.map": "/personal-homepage/static/js/main.e75c335a.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f5de804b.js"
+    "static/js/main.e75c335a.js"
   ]
 }
