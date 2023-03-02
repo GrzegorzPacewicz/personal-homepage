@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   justify-self: flex-end;
   gap: 16px;
   align-items: center;
+  position: absolute;
   transition: all 0.5s;
 `;
 
@@ -14,7 +15,7 @@ export const ThemeSwitchButton = styled.div`
   border: 1px solid ${({ theme }) => theme.elementColor.switchButton.border};
   transition: background 1s linear, color 1s linear;
   width: 48px;
-  height: 26px;
+  height: 25px;
   border-radius: 25%/50%;
   display: flex;
   align-items: center;
