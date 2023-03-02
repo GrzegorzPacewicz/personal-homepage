@@ -2,16 +2,15 @@ import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 119px 0 0;
+  width: 176px;
   display: flex;
   align-self: flex-start;
   justify-self: flex-end;
-  gap: 16px;
   align-items: center;
-  position: absolute;
   transition: all 0.5s;
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
-    grid-template-columns: 1fr;
     margin: 32px 0 0;
+    flex-direction: row-reverse;
   }
 `;
 
@@ -33,10 +32,11 @@ export const BackgroundText = styled.p`
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3;
+  margin-right: 12px;
   color: ${({ theme }) => theme.elementColor.switchButton.text};
   text-transform: uppercase;
   padding: 0 8px;
-  transition: background 1s linear, color 1s linear;
+  transition: 0.5s;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     display: none;
