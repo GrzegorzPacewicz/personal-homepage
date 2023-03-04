@@ -4,15 +4,14 @@ import { boxShadow, borderRadius } from "../../core/theme";
 export const HeaderWrapper = styled.header`
   max-width: 1200px;
   display: grid;
-  grid-template-columns: auto 4fr auto;
+  grid-template-columns: auto auto auto;
   margin: 115px 0 64px;
   transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
-    grid-template-columns: 1fr;
-    margin-top: 32px;
-    margin-bottom: 0;
-  }
+    grid-template-columns: auto auto;
+    margin: 32px 0 0;
+    }
 `;
 
 export const Photo = styled.img`
@@ -63,10 +62,12 @@ export const Name = styled.h1`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     font-size: 28px;
+    margin: 0 0 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 22px;
+    margin: 0 0 16px;
   }
 `;
 
