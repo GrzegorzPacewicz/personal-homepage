@@ -8,7 +8,8 @@
 - Preview
 - Available scripts
 
-## The demo is [here](https://grzegorzpacewicz.github.io/personal-homepage/)
+## Demo
+The demo is [here](https://grzegorzpacewicz.github.io/personal-homepage/)
 
 ## Technologies used
 - html
