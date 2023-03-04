@@ -16,7 +16,6 @@ import ThemeSwitch from "./ThemeSwitch";
 const Header = () => (
   <HeaderWrapper>
     {" "}
-    <ThemeSwitch />
     <Photo src={image} alt="Grzegorza Pacewicza Photo" />
     <Details>
       <ThisIs>This is</ThisIs>
@@ -30,6 +29,7 @@ const Header = () => (
         Hire me
       </EmailLink>{" "}
     </Details>
+    <ThemeSwitch />
   </HeaderWrapper>
 );
 
