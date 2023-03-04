@@ -5,8 +5,7 @@ export const HeaderWrapper = styled.header`
   max-width: 1200px;
   display: grid;
   grid-template-columns: auto 4fr auto;
-  margin-bottom: 64px;
-  margin-top: 119px;
+  margin: 115px 0 64px;
   transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
@@ -82,6 +81,7 @@ export const Description = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 17px;
+    margin: 0 0 24px 0;
   }
 `;
 

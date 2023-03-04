@@ -4,10 +4,9 @@ export const Wrapper = styled.div`
   display: flex;
   align-self: flex-start;
   justify-self: flex-end;
-  gap: 16px;
   align-items: center;
-  position: absolute;
   transition: all 0.5s;
+  position: absolute;
 `;
 
 export const ThemeSwitchButton = styled.div`
@@ -30,7 +29,7 @@ export const BackgroundText = styled.p`
   line-height: 1.3;
   color: ${({ theme }) => theme.elementColor.switchButton.text};
   text-transform: uppercase;
-  padding: 0 8px;
+  margin-right: 12px;
   transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {

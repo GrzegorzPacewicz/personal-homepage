@@ -101,8 +101,11 @@ export const LinkWrapper = styled.dd`
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 17px;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
  `;
-
 
 export const Link = styled.a`
   font-weight: 400;
