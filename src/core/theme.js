@@ -1,17 +1,17 @@
 const color = {
-  whiteLilac: "#FBFBFE",
   white: "#FFFFFF",
-  slateGray: "#6E7E91",
+  whiteLilac: "#FBFBFE",
   mercury: "#E5E5E5",
-  mineShaft: "#252525",
-  semiDark: "#363636",
+  slateGray: "#6E7E91",
+  doveGray: "#6D6D6D",
+  anakiwa: "#8CC2FF",
   scienceBlue: "#0366D6",
-  blue: "#2517EB",
   dodgerBlue: "#2188FF",
   githubTileHover: "rgba(3, 102, 214, 0.5)",
-  anakiwa: "#8CC2FF",
+  blue: "#2517EB",
   shipCove: "#6D93BE",
-  doveGray: "#6D6D6D",
+  semiDark: "#363636",
+  mineShaft: "#252525",
 };
 
 const breakpoint = {

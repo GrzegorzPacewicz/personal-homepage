@@ -1,5 +1,7 @@
-import {github} from "../../core/personalInfo";
 import GitHubTile from "./Tile/index";
+import Loader from "./Loader";
+import Error from "./Error";
+import {github} from "../../core/personalInfo";
 import {
     GitHubIcon,
     Lead,
@@ -8,8 +10,6 @@ import {
     TilesWrapper,
     Link,
 } from "./styled";
-import Loader from "./Loader";
-import Error from "./Error";
 import {useSelector} from "react-redux";
 import {selectRepos, selectReposStatus} from "./githubSlice";
 import {nanoid} from "@reduxjs/toolkit";

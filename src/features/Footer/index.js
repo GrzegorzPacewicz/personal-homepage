@@ -7,7 +7,6 @@ import {
   IconsContainer,
   Link,
 } from "./styled";
-
 import { socialMedia } from "./socialMedia";
 
 const Footer = () => {
@@ -21,7 +20,6 @@ const Footer = () => {
           a website, dashboard or mobile app in mind and need some help to make
           your ideas come to life, feel free to contact me.
         </Content>
-
         <IconsContainer>
           {socialMedia.map(({ name, Icon, link }) => (
             <Link

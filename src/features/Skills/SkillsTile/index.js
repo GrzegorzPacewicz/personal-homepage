@@ -8,7 +8,6 @@ import {
   Point,
 } from "./styled";
 
-
 const SkillsTile = ({ title, icon, list }) => {
   return (
     <SkillsWrapper>
