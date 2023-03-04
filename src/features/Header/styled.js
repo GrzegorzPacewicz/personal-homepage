@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.header`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: auto auto;
-    margin: 32px 0 0;
+    margin: 32px 0 48px;
     }
 `;
 

@@ -15,7 +15,7 @@ const ThemeSwitch = () => {
   return (
     <>
       <Wrapper>
-        <BackgroundText>Dark mode {isDarkTheme ? "on" : "off"} </BackgroundText>
+        <BackgroundText>Dark mode {isDarkTheme ? "on \u00A0" : "off"} </BackgroundText>
         <ThemeSwitchButton
           onClick={() => dispatch(toggleIsDarkTheme())}
           title="change a theme"
