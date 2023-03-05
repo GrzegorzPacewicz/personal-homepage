@@ -9,7 +9,7 @@
 - Available scripts
 
 ## Demo
-The demo is [here](https://grzegorzpacewicz.github.io/personal-homepage/)
+[The demo is here](https://grzegorzpacewicz.github.io/personal-homepage/)
 
 ## Technologies used
 - html
