@@ -27,6 +27,7 @@ export const BackgroundText = styled.p`
   font-weight: 700;
   font-size: 12px;
   line-height: 1.3;
+  width: 102px;
   color: ${({ theme }) => theme.elementColor.switchButton.text};
   text-transform: uppercase;
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
