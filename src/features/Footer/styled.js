@@ -18,7 +18,7 @@ export const FooterIntro = styled.p`
   text-transform: uppercase;
   color: ${({ theme }) => theme.elementColor.footer.intro};
   margin: 24px 0;
-  transition: background 1s linear, color 1s linear;
+  transition: all 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
      margin: 16px 0;
@@ -36,7 +36,7 @@ export const Email = styled.a`
   line-height: 39px;
   letter-spacing: 0.05em;
   text-decoration: none;
-  transition: background 1s linear, color 1s linear;
+  transition: all 1s linear;
 
   &:hover {
     filter: brightness(120%);
@@ -60,6 +60,7 @@ export const Content = styled.p`
   line-height: 1.4;
   letter-spacing: 0.05em;
   text-align: left;
+  transition: all 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
@@ -81,17 +82,18 @@ export const IconsContainer = styled.div`
 export const Link = styled.a`
   color: ${({ theme }) => theme.elementColor.footer.text};
   text-decoration: none;
-  transition: background 1s linear, color 1s linear;
+  transition: all 1s linear;
 `;
 
 export const StyledIcon = (icon) => styled(icon)`
   width: 48px;
   height: 48px;
   fill: ${({ theme }) => theme.elementColor.footer.icon};
-  transition: background 1s linear, color 1s linear;
+  transition: all 1s linear;
 
   &:hover {
     fill: ${({ theme }) => theme.elementColor.footer.hover};
+    transition: all 1s linear;
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 32px;
