@@ -61,6 +61,7 @@ export const theme = {
     footer: {
       intro: color.slateGray,
       email: color.mineShaft,
+      emailhover: color.scienceBlue,
       text: color.mineShaft,
       logo: color.mineShaft,
       hover: color.scienceBlue,
@@ -110,6 +111,7 @@ export const darkTheme = {
     footer: {
       intro: color.white,
       email: color.white,
+      emailhover: color.dodgerBlue,
       text: color.white,
       icon: color.white,
       hover: color.dodgerBlue,
