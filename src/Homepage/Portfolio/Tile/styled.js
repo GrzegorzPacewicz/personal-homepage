@@ -16,7 +16,8 @@ export const TileWrapper = styled.div`
   transition: background 1s linear, color 1s linear;
 
   :hover {
-    border: 6px solid ${({ theme }) => theme.color.githubTileHover};
+    border: 6px solid ${({ theme }) => theme.elementColor.portfolio.tileHover};
+    box-shadow: ${boxShadow}
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     padding: 36px;
