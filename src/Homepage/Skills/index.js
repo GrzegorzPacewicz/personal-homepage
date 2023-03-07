@@ -1,5 +1,5 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { personalInfo } from "../../core/personalInfo";
+import { personalInfo } from "../../common/personalInfo";
 import SkillsTile from "./SkillsTile";
 
 function Skills() {

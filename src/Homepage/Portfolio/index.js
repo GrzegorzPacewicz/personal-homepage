@@ -1,7 +1,7 @@
 import GitHubTile from "./Tile/index";
 import Loader from "./Loader";
 import Error from "./Error";
-import {github} from "../../core/personalInfo";
+import {github} from "../../common/personalInfo";
 import {
     GitHubIcon,
     Lead,

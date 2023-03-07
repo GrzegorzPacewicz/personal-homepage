@@ -1,6 +1,6 @@
 import {useSelector} from "react-redux";
 import {selectIsDarkTheme} from "../../Header/ThemeSwitch/themeSlice";
-import {github} from "../../../core/personalInfo";
+import {github} from "../../../common/personalInfo";
 import dangerBlack from "./dangerBlack.svg"
 import dangerLight from "./dangerLight.svg"
 import {Wrapper, DangerIcon, Title, InfoWrapper, Text, ButtonLink} from "./styled";

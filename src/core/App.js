@@ -1,16 +1,16 @@
-import { AppContainer } from "../features/AppContainer/styled";
+import { AppContainer } from "../Homepage/AppContainer/styled";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./theme";
 import { GlobalStyle } from "./Globalstyle";
 import { Normalize } from "styled-normalize";
-import Skills from "../features/Skills";
-import Footer from "../features/Footer";
-import Header from "../features/Header";
-import Portfolio from "../features/Portfolio";
-import {fetchRepos} from "../features/Portfolio/githubSlice";
+import Skills from "../Homepage/Skills";
+import Footer from "../Homepage/Footer";
+import Header from "../Homepage/Header";
+import Portfolio from "../Homepage/Portfolio";
+import {fetchRepos} from "../Homepage/Portfolio/githubSlice";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {selectIsDarkTheme} from "../features/Header/ThemeSwitch/themeSlice"
+import {selectIsDarkTheme} from "../Homepage/Header/ThemeSwitch/themeSlice"
 function App() {
   const dispatch = useDispatch();
   const isDarkTheme = useSelector(selectIsDarkTheme);

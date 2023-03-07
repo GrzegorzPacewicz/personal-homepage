@@ -59,6 +59,7 @@ export const Name = styled.h1`
   font-size: 38px;
   margin: 0 0 36px 0;
   color: ${({ theme }) => theme.elementColor.header.text};
+  transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     font-size: 28px;

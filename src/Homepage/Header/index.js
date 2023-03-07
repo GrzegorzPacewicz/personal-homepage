@@ -10,7 +10,7 @@ import {
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
-import { email } from "../../core/personalInfo";
+import { email } from "../../common/personalInfo";
 import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => (

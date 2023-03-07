@@ -1,4 +1,4 @@
-import { email } from "../../core/personalInfo";
+import { email } from "../../common/personalInfo";
 import {
   FooterWrapper,
   FooterIntro,
