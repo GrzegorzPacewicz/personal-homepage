@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: auto auto;
     margin: 32px 0 48px;
-    }
+  }
 `;
 
 export const Photo = styled.img`
@@ -90,7 +90,7 @@ export const Description = styled.p`
 export const EmailLink = styled.a`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.elementColor.header.emailText};
   background-color: ${({ theme }) => theme.elementColor.header.button};
   padding: 12px 16px;
   box-shadow: ${boxShadow};

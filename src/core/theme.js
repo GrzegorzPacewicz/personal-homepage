@@ -33,11 +33,13 @@ export const theme = {
       description: color.slateGray,
       button: color.scienceBlue,
       link: color.anakiwa,
+      emailText: color.white,
     },
     switchButton: {
       background: color.mercury,
       border: color.slateGray,
       text: color.slateGray,
+      switchElement: color.mercury,
     },
     subheader: {
       title: color.mineShaft,
@@ -50,6 +52,7 @@ export const theme = {
     portfolio: {
       icon: color.scienceBlue,
       background: color.white,
+      lead: color.mineShaft,
       tileHover: color.tropicalBlue,
       title: color.scienceBlue,
       description: color.slateGray,
@@ -58,6 +61,7 @@ export const theme = {
       text: color.mineShaft,
       danger: color.mineShaft,
       button: color.scienceBlue,
+      errorLink: color.white,
     },
     footer: {
       intro: color.slateGray,
@@ -68,8 +72,7 @@ export const theme = {
       hoverIcon: color.scienceBlue,
     },
   },
-  color,
-  breakpoint,
+   breakpoint,
 };
 
 export const darkTheme = {
@@ -83,12 +86,13 @@ export const darkTheme = {
       description: color.white,
       button: color.dodgerBlue,
       link: color.shipCove,
+      emailText: color.white,
     },
     switchButton: {
       background: color.doveGray,
       border: color.white,
       text: color.white,
-
+      switchElement: color.mercury,
     },
     skills: {
       background: color.semiDark,
@@ -102,6 +106,7 @@ export const darkTheme = {
       icon: color.dodgerBlue,
       background: color.semiDark,
       tileHover: color.azure,
+      lead: color.mineShaft,
       title: color.white,
       description: color.white,
       link: color.dodgerBlue,
@@ -119,8 +124,7 @@ export const darkTheme = {
       hoverIcon: color.dodgerBlue,
     },
   },
-  color,
-  breakpoint,
+    breakpoint,
 };
 
 export const boxShadow =

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {borderRadius, boxShadow} from "../../../core/theme";
+import { borderRadius, boxShadow } from "../../../core/theme";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,10 +9,10 @@ export const Wrapper = styled.div`
   margin: 82px 0 140px 0;
   transition: 1s;
   color: ${({ theme }) => theme.elementColor.portfolio.text};
-  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin: 40px 0 70px 0;
   }
-  @media (max-width:${({ theme }) => theme.breakpoint.mobile}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 16px;
   }
 `;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 export const DangerIcon = styled.img`
   width: 40px;
   height: 40px;
-  `;
+`;
 export const Title = styled.h3`
   font-weight: 700;
   font-size: 24px;
@@ -30,10 +30,10 @@ export const Title = styled.h3`
   margin-top: 32px;
 `;
 export const InfoWrapper = styled.div`
-    margin: 0 0 48px 0;
-    @media (max-width:${({ theme }) => theme.breakpoint.mobile}px){
-        margin: 0 0 32px 0;
-    }
+  margin: 0 0 48px 0;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 0 0 32px 0;
+  }
 `;
 
 export const Text = styled.p`
@@ -43,7 +43,7 @@ export const Text = styled.p`
   text-align: center;
   letter-spacing: 0.05em;
   margin: 0;
-  `;
+`;
 
 export const ButtonLink = styled.a`
   display: flex;
@@ -54,7 +54,7 @@ export const ButtonLink = styled.a`
   gap: 16px;
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.elementColor.portfolio.errorLink};
   background-color: ${({ theme }) => theme.elementColor.portfolio.button};
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};
@@ -64,8 +64,8 @@ export const ButtonLink = styled.a`
   transition: 0.3s;
   letter-spacing: 0.05em;
   border: 1px solid rgba(209, 213, 218, 0.1);
-  
-  &:visited{
-    color: ${({ theme }) => theme.color.white};
+
+  &:visited {
+    color: ${({ theme }) => theme.elementColor.portfolio.errorLink};
   }
 `;

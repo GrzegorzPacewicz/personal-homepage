@@ -6,8 +6,8 @@ export const PortfolioWrapper = styled.div`
   text-align: center;
   margin: 72px 0;
   word-break: break-word;
-    
-    @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     margin: 60px 0;
   }
 
@@ -38,7 +38,7 @@ export const Lead = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.elementColor.portfolio.lead};
   transition: 1s;
   margin: 0;
   padding-bottom: 24px;
@@ -51,8 +51,10 @@ export const TilesWrapper = styled.div`
   gap: 32px;
   transition: 1s;
 
-  ${({ notSuccess }) => notSuccess && css`
-        grid-template-columns: auto;
+  ${({ notSuccess }) =>
+    notSuccess &&
+    css`
+      grid-template-columns: auto;
     `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
