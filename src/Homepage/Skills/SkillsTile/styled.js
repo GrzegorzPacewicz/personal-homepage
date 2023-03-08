@@ -8,7 +8,7 @@ export const SkillsWrapper = styled.div`
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};
   padding-bottom: 32px;
-  transition: background 1s linear, color 1s linear;
+  transition: 1s;
 `;
 
 export const Icon = styled.span`
@@ -19,6 +19,7 @@ export const Icon = styled.span`
   text-align: center;
   letter-spacing: 0.05em;
   padding-left: 16px;
+  transition: 1s;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 18px;
@@ -52,7 +53,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.elementColor.skills.text};
-  transition: background 1s linear, color 1s linear;
+  transition: 1s;
   margin: 0 32px;
   line-height: 1.4;
   display: flex;
@@ -62,8 +63,7 @@ export const ListItem = styled.li`
     font-size: 14px;
     line-height: 17px;
   }
-  
-`;
+ `;
 
 export const Point = styled.span`
   width: 9px;
@@ -71,5 +71,5 @@ export const Point = styled.span`
   border-radius: 50%;
   margin-right: 16px;
   background: ${({ theme }) => theme.elementColor.skills.point};
-  transition: background 1s linear, color 1s linear;
+  transition: 1s;
 `;

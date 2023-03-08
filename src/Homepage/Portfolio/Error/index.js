@@ -16,7 +16,7 @@ const Error = () => {
                 </Title>
                 <InfoWrapper>
                     <Text>Sorry, failed to load Github projects.
-                        <br/>You can check tem directly on Github.</Text>
+                    <br/>You can check tem directly on Github.</Text>
                 </InfoWrapper>
                 <ButtonLink
                     href={github}

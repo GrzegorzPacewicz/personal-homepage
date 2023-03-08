@@ -6,6 +6,7 @@ export const PortfolioWrapper = styled.div`
   text-align: center;
   margin: 72px 0;
   word-break: break-word;
+  transition: 1s;
   
     @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     margin: 60px 0;
@@ -29,7 +30,7 @@ export const Link = styled.a`
 export const GitHubIcon = styled(githubIcon)`
   width: 40px;
   height: 40px;
-  transition: background 1s linear, color 1s linear;
+  transition: 1s;
   fill: ${({ theme }) => theme.elementColor.portfolio.icon};
 `;
 
@@ -39,7 +40,7 @@ export const Lead = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.mineShaft};
-  transition: background 1s linear, color 1s linear;
+  transition: 1s;
   margin: 0;
   padding-bottom: 24px;
 `;
@@ -49,6 +50,7 @@ export const TilesWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  transition: 1s;
 
   ${({ notSuccess }) => notSuccess && css`
         grid-template-columns: auto;

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin: 82px 0 140px 0;
+  transition: 1s;
   color: ${({ theme }) => theme.elementColor.portfolio.text};
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px){
     margin: 40px 0 70px 0;
@@ -63,7 +64,7 @@ export const ButtonLink = styled.a`
   transition: 0.3s;
   letter-spacing: 0.05em;
   border: 1px solid rgba(209, 213, 218, 0.1);
-
+  
   &:visited{
     color: ${({ theme }) => theme.color.white};
   }
