@@ -6,7 +6,6 @@ const GitHubTile = ({name, description, gitUrl, demo}) => {
     "-",
     " ");
   return (
-    <>
       <TileWrapper title={`repository name: ${name}`}>
         <Title>{formattedName}</Title>
         <Description>{description && description}</Description>
@@ -33,8 +32,7 @@ const GitHubTile = ({name, description, gitUrl, demo}) => {
               </LinkWrapper>
             </LinksWrapper>}
       </TileWrapper>
-    </>
-  );
+   );
 };
 
 export default GitHubTile;
