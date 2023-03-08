@@ -8,7 +8,6 @@ export const SkillsWrapper = styled.div`
   box-shadow: ${boxShadow};
   border-radius: ${borderRadius};
   padding-bottom: 32px;
-  transition: 1s;
 `;
 
 export const Icon = styled.span`
@@ -19,7 +18,6 @@ export const Icon = styled.span`
   text-align: center;
   letter-spacing: 0.05em;
   padding-left: 16px;
-  transition: 1s;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     font-size: 18px;
@@ -71,5 +69,4 @@ export const Point = styled.span`
   border-radius: 50%;
   margin-right: 16px;
   background: ${({ theme }) => theme.elementColor.skills.point};
-  transition: 1s;
 `;

@@ -26,6 +26,7 @@ export const theme = {
   elementColor: {
     site: {
       background: color.whiteLilac,
+      text: color.slateGray,
     },
     header: {
       text: color.mineShaft,
@@ -52,8 +53,8 @@ export const theme = {
       tileHover: color.tropicalBlue,
       title: color.scienceBlue,
       description: color.slateGray,
-      link: color.scienceBlue,
-      underline: color.scienceBlue,
+      link: color.dodgerBlue,
+      underline: color.dodgerBlue,
       text: color.mineShaft,
       danger: color.mineShaft,
       button: color.scienceBlue,
@@ -61,10 +62,10 @@ export const theme = {
     footer: {
       intro: color.slateGray,
       email: color.mineShaft,
-      emailhover: color.scienceBlue,
+      emailHover: color.scienceBlue,
       text: color.mineShaft,
-      logo: color.mineShaft,
-      hover: color.scienceBlue,
+      icon: color.mineShaft,
+      hoverIcon: color.scienceBlue,
     },
   },
   color,
@@ -75,6 +76,7 @@ export const darkTheme = {
   elementColor: {
     site: {
       background: color.mineShaft,
+      text: color.white,
     },
     header: {
       text: color.white,
@@ -102,8 +104,8 @@ export const darkTheme = {
       tileHover: color.azure,
       title: color.white,
       description: color.white,
-      link: color.dodgerBlue,
-      underline: color.dodgerBlue,
+      link: color.scienceBlue,
+      underline: color.scienceBlue,
       text: color.white,
       danger: color.white,
       button: color.dodgerBlue,
@@ -111,10 +113,10 @@ export const darkTheme = {
     footer: {
       intro: color.white,
       email: color.white,
-      emailhover: color.dodgerBlue,
+      emailHover: color.dodgerBlue,
       text: color.white,
       icon: color.white,
-      hover: color.dodgerBlue,
+      hoverIcon: color.dodgerBlue,
     },
   },
   color,

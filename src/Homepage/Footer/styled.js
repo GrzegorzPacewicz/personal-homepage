@@ -39,7 +39,7 @@ export const Email = styled.a`
   transition: 0.5s;
 
   &:hover{ 
-    color: ${({ theme }) => theme.elementColor.footer.emailhover};
+    color: ${({ theme }) => theme.elementColor.footer.emailHover};
   }
   
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
@@ -89,9 +89,10 @@ export const StyledIcon = (icon) => styled(icon)`
   width: 48px;
   height: 48px;
   fill: ${({ theme }) => theme.elementColor.footer.icon};
+  transition: 0.5s;
 
   &:hover {
-    fill: ${({ theme }) => theme.elementColor.footer.hover};
+    fill: ${({ theme }) => theme.elementColor.footer.hoverIcon};
    }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 32px;
