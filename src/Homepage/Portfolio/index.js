@@ -21,18 +21,16 @@ const Portfolio = () => {
   return (
     <PortfolioWrapper>
 
-        <Link
+      <Link
             href={github}
             rel="noreferrer"
             target="_blank">
             <GitHubIcon title="github"/>
-        </Link>
+      </Link>
 
       <PortfolioHeader>Portfolio</PortfolioHeader>
-
-      <Lead>My recent projects</Lead>
-
-      <TilesWrapper
+        <Lead>My recent projects</Lead>
+           <TilesWrapper
             notSuccess={ reposStatus !== "success" }>
            {
               reposStatus === "error"
@@ -47,10 +45,9 @@ const Portfolio = () => {
                             demo={repo.homepage}
                             gitUrl={repo.html_url}
                           />)
-          }
-      </TilesWrapper>
-
-    </PortfolioWrapper>
+            }
+            </TilesWrapper>
+     </PortfolioWrapper>
   );
 };
 

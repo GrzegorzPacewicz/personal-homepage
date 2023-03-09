@@ -20,15 +20,19 @@ const Header = ({ theme, toggleTheme }) => (
 
     <Details>
       <ThisIs>This is</ThisIs>
+
       <Name>Grzegorz Pacewicz</Name>
+
       <Description>
         👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
       </Description>
+
       <EmailLink href={`mailto:${email}`} title={email}>
-        <Envelope src={envelope} alt=""></Envelope>
+        <Envelope src={envelope} alt=""/>
         Hire me
-      </EmailLink>{" "}
+      </EmailLink>
+
     </Details>
 
     <ThemeSwitch  theme={theme} toggleTheme={toggleTheme}/>
