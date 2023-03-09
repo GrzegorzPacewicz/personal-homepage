@@ -10,13 +10,18 @@ import {
     TilesWrapper,
     Link,
 } from "./styled";
-import { useSelector } from "react-redux";
-import { selectRepos, selectReposStatus } from "./githubSlice";
-import { nanoid } from "@reduxjs/toolkit";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRepos, selectRepos, selectReposStatus } from "./githubSlice";
+import { useEffect } from "react";
 
 const Portfolio = () => {
     const reposStatus = useSelector(selectReposStatus);
     const repos = useSelector(selectRepos);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchRepos());
+    }, [dispatch])
 
   return (
     <PortfolioWrapper>
@@ -39,7 +44,7 @@ const Portfolio = () => {
               ? <Loader />
                   : repos.map((repo) =>
                           <GitHubTile as="li"
-                            key={nanoid()}
+                            key={repo.id}
                             description={repo.description}
                             name={repo.name}
                             demo={repo.homepage}
