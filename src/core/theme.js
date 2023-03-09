@@ -22,7 +22,7 @@ const breakpoint = {
   bigScreen: 1024,
 };
 
-export const theme = {
+export const lightTheme = {
   elementColor: {
     site: {
       background: color.whiteLilac,
