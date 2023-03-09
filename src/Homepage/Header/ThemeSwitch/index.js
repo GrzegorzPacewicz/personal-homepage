@@ -12,8 +12,8 @@ import { selectIsDarkTheme, toggleIsDarkTheme } from "./themeSlice";
 const ThemeSwitch = () => {
   const dispatch = useDispatch();
   const isDarkTheme = useSelector(selectIsDarkTheme);
+
   return (
-    <>
       <Wrapper>
         <BackgroundText>Dark mode {isDarkTheme ? "on" : "off"} </BackgroundText>
         <ThemeSwitchButton
@@ -24,10 +24,10 @@ const ThemeSwitch = () => {
             src={isDarkTheme ? dark : light}
             alt="Change Theme"
             moveRight={isDarkTheme}
-          ></SwitchElement>
+          />
         </ThemeSwitchButton>
       </Wrapper>
-    </>
+
   );
 };
 

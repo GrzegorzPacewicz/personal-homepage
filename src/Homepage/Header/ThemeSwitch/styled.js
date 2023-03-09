@@ -13,7 +13,6 @@ export const ThemeSwitchButton = styled.div`
   background-color: ${({ theme }) =>
     theme.elementColor.switchButton.background};
   border: 1px solid ${({ theme }) => theme.elementColor.switchButton.border};
-  transition: background 1s linear, color 1s linear;
   width: 48px;
   height: 25px;
   border-radius: 25%/50%;

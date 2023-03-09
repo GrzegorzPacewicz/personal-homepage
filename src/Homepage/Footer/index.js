@@ -1,4 +1,4 @@
-import { email } from "../../common/personalInfo";
+import { email } from "../personalInfo";
 import {
   FooterWrapper,
   FooterIntro,
@@ -9,17 +9,20 @@ import {
 } from "./styled";
 import { socialMedia } from "./socialMedia";
 
-const Footer = () => {
-  return (
-    <>
-      <FooterWrapper>
-        <FooterIntro>Let`s Talk</FooterIntro>
+const Footer = () =>
+   (
+    <FooterWrapper>
+
+      <FooterIntro>Let`s Talk</FooterIntro>
+
         <Email href={`mailto:${email}`}>{email}</Email>
+
         <Content>
           I’m always open to new projects whenever I have the time. If you have
           a website, dashboard or mobile app in mind and need some help to make
           your ideas come to life, feel free to contact me.
         </Content>
+
         <IconsContainer>
           {socialMedia.map(({ name, Icon, link }) => (
             <Link
@@ -33,9 +36,8 @@ const Footer = () => {
             </Link>
           ))}
         </IconsContainer>
+
       </FooterWrapper>
-    </>
-  );
-};
+   );
 
 export default Footer;

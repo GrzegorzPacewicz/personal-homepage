@@ -114,6 +114,7 @@ export const darkTheme = {
       text: color.white,
       danger: color.white,
       button: color.dodgerBlue,
+      errorLink: color.white,
     },
     footer: {
       intro: color.white,

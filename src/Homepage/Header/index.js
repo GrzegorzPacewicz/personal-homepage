@@ -10,13 +10,14 @@ import {
 } from "./styled";
 import image from "./images/author.jpg";
 import envelope from "./images/envelope.svg";
-import { email } from "../../common/personalInfo";
+import { email } from "../personalInfo";
 import ThemeSwitch from "./ThemeSwitch";
 
-const Header = () => (
+const Header = ({ theme, toggleTheme }) => (
   <HeaderWrapper>
-    {" "}
-    <Photo src={image} alt="Grzegorza Pacewicza Photo" />
+
+    <Photo src={image} alt="Grzegorz Pacewicz Photo" />
+
     <Details>
       <ThisIs>This is</ThisIs>
       <Name>Grzegorz Pacewicz</Name>
@@ -29,7 +30,9 @@ const Header = () => (
         Hire me
       </EmailLink>{" "}
     </Details>
-    <ThemeSwitch />
+
+    <ThemeSwitch  theme={theme} toggleTheme={toggleTheme}/>
+
   </HeaderWrapper>
 );
 

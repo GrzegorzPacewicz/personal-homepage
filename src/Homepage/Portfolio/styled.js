@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { SubHeader } from "../../common/SubHeader/styled";
-import { ReactComponent as githubIcon } from "../../common/icons/github.svg";
+import { SubHeader } from "../SubHeader/styled";
+import { ReactComponent as githubIcon } from "./github.svg";
 
 export const PortfolioWrapper = styled.div`
   text-align: center;
@@ -29,8 +29,13 @@ export const Link = styled.a`
 export const GitHubIcon = styled(githubIcon)`
   width: 40px;
   height: 40px;
-  transition: 1s;
+  transition: 0.5s;
+  
   fill: ${({ theme }) => theme.elementColor.portfolio.icon};
+
+  &:hover {
+    filter: brightness(120%);
+  }
 `;
 
 export const Lead = styled.p`

@@ -1,7 +1,7 @@
 import GitHubTile from "./Tile/index";
 import Loader from "./Loader";
 import Error from "./Error";
-import {github} from "../../common/personalInfo";
+import { github } from "../personalInfo";
 import {
     GitHubIcon,
     Lead,
@@ -10,9 +10,9 @@ import {
     TilesWrapper,
     Link,
 } from "./styled";
-import {useSelector} from "react-redux";
-import {selectRepos, selectReposStatus} from "./githubSlice";
-import {nanoid} from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
+import { selectRepos, selectReposStatus } from "./githubSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
 const Portfolio = () => {
     const reposStatus = useSelector(selectReposStatus);
@@ -20,14 +20,18 @@ const Portfolio = () => {
 
   return (
     <PortfolioWrapper>
+
         <Link
             href={github}
             rel="noreferrer"
             target="_blank">
             <GitHubIcon title="github"/>
         </Link>
+
       <PortfolioHeader>Portfolio</PortfolioHeader>
+
       <Lead>My recent projects</Lead>
+
       <TilesWrapper
             notSuccess={ reposStatus !== "success" }>
            {
@@ -45,6 +49,7 @@ const Portfolio = () => {
                           />)
           }
       </TilesWrapper>
+
     </PortfolioWrapper>
   );
 };

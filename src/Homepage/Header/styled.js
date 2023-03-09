@@ -99,7 +99,7 @@ export const EmailLink = styled.a`
   margin: 0;
   gap: 16px;
   text-decoration: none;
-  transition: 0.3s, background 1s linear, color 1s linear;
+  transition: 0.3s;
   letter-spacing: 0.05em;
   display: grid;
   align-items: center;

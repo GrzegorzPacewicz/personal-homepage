@@ -1,8 +1,8 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { personalInfo } from "../../common/personalInfo";
+import { personalInfo } from "../personalInfo";
 import SkillsTile from "./SkillsTile";
 
-function Skills() {
+const Skills = () => {
   return (
     <>
       {personalInfo.map((sectionInfo) => (

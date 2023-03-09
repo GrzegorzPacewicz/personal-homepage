@@ -1,4 +1,4 @@
-import { SubHeader } from "../../../common/SubHeader/styled";
+import { SubHeader } from "../../SubHeader/styled";
 import {
   Divider,
   ListItem,

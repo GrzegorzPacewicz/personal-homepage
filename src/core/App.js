@@ -11,6 +11,7 @@ import { fetchRepos } from "../Homepage/Portfolio/githubSlice";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsDarkTheme } from "../Homepage/Header/ThemeSwitch/themeSlice";
+
 function App() {
   const dispatch = useDispatch();
   const isDarkTheme = useSelector(selectIsDarkTheme);
