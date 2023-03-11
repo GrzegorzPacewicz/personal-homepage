@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Normalize />
-        <AppWrapper>
+      <AppWrapper>
       <AppContainer>
         <Header />
           <main>
@@ -26,7 +26,7 @@ function App() {
           </main>
         <Footer />
       </AppContainer>
-        </AppWrapper>
+      </AppWrapper>
     </ThemeProvider>
   );
 }

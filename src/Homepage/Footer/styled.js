@@ -72,11 +72,11 @@ export const Content = styled.p`
 export const IconsContainer = styled.div`
   display: flex;
   gap: 24px;
-  padding: 56px 0 110px 0;
+  padding: 56px 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
   `;
 
