@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { boxShadow, borderRadius, divider } from "../../../core/theme";
 
-export const SkillsWrapper = styled.div`
+export const SkillsWrapper = styled.section`
   max-width: 1216px;
   left: calc(50% - 1216px / 2 + 2px);
   background: ${({ theme }) => theme.elementColor.skills.background};

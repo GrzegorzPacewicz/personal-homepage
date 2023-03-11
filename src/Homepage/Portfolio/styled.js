@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { SubHeader } from "../SubHeader/styled";
 import { ReactComponent as githubIcon } from "./github.svg";
 
-export const PortfolioWrapper = styled.div`
+export const PortfolioWrapper = styled.section`
   text-align: center;
   margin: 72px 0;
   word-break: break-word;

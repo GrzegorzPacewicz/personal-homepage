@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   text-align: left;
   width: 60%;
-  margin: 120px 8px 110px;
-  
+  padding: 0 8px;
+    
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin: 48px 8px 30px; 
+    padding: 48px 8px 30px; 
     width: 100%;
   }
 `;
@@ -72,11 +72,11 @@ export const Content = styled.p`
 export const IconsContainer = styled.div`
   display: flex;
   gap: 24px;
-  margin: 56px 0 110px 0;
+  padding: 56px 0 110px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigMobile}px) {
     font-size: 14px;
-    margin: 40px 0;
+    padding: 40px 0;
   }
   `;
 

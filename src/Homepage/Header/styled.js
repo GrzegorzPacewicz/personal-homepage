@@ -5,12 +5,12 @@ export const HeaderWrapper = styled.header`
   max-width: 1200px;
   display: grid;
   grid-template-columns: auto auto auto;
-  margin: 115px 0 64px;
+  padding: 115px 0 64px;
   transition: background 1s linear, color 1s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.bigScreen}px) {
     grid-template-columns: auto auto;
-    margin: 32px 0 48px;
+    padding: 32px 0 48px;
   }
 `;
 

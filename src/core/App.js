@@ -2,7 +2,7 @@ import Skills from "../Homepage/Skills";
 import Footer from "../Homepage/Footer";
 import Header from "../Homepage/Header";
 import Portfolio from "../Homepage/Portfolio";
-import { AppContainer } from "../Homepage/AppContainer/styled";
+import { AppContainer, AppWrapper } from "../Homepage/AppContainer/styled";
 import { Normalize } from "styled-normalize";
 import { GlobalStyle } from "./Globalstyle";
 import { ThemeProvider } from "styled-components";
@@ -17,12 +17,16 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Normalize />
+        <AppWrapper>
       <AppContainer>
         <Header />
+          <main>
         <Skills />
         <Portfolio />
+          </main>
         <Footer />
       </AppContainer>
+        </AppWrapper>
     </ThemeProvider>
   );
 }
