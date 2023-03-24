@@ -15,18 +15,20 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <GlobalStyle />
+    <>
       <Normalize />
+      <GlobalStyle />
       <AppWrapper>
-      <AppContainer>
+        <AppContainer>
         <Header />
           <main>
         <Skills />
         <Portfolio />
           </main>
         <Footer />
-      </AppContainer>
+        </AppContainer>
       </AppWrapper>
+    </>
     </ThemeProvider>
   );
 }
