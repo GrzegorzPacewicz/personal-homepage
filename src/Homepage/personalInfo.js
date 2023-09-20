@@ -12,16 +12,21 @@ export const personalInfo = [
     icon: "🛠️",
     list: [
       "JavaScript ES6+",
+      "Typescript",
       "React",
       "Redux-Saga",
       "Redux (Toolkit)",
       "React Hooks",
       "React Router",
+      "TanstStack Query",
+      "Vite",
+      "Material UI",
       "Semantic & accessible HTML",
       "Responsive Web Design",
       "CSS BEM convention",
       "CSS Grid",
       "CSS Flexbox",
+      "Tailwind",
       "Working with API (axios)",
       "Teamwork",
       "Markdown",
@@ -38,6 +43,12 @@ export const personalInfo = [
   {
     title: "What I want to learn next",
     icon: "🚀",
-    list: ["Typescript", "Node.js", "Unit testing", "React Context", "Cypress"],
+    list: [
+      "Next.js",
+      "Node.js",
+      "Unit testing",
+      "React Context",
+      "Cypress"
+    ],
   },
 ];

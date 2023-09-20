@@ -1,4 +1,3 @@
-import { email } from "../personalInfo";
 import {
   FooterWrapper,
   FooterIntro,
@@ -8,6 +7,7 @@ import {
   Link,
 } from "./styled";
 import { socialMedia } from "./socialMedia";
+import { email } from "../personalInfo";
 
 const Footer = () =>
    (

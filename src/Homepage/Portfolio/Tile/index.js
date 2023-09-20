@@ -1,4 +1,4 @@
-import {TileWrapper, Title, Description, Link, LinksWrapper, LinkWrapper} from "./styled";
+import { Description, Link, LinksWrapper, LinkWrapper, TileWrapper, Title } from "./styled";
 
 const GitHubTile = ({name, description, gitUrl, demo}) => {
 

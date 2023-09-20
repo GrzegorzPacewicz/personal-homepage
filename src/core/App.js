@@ -11,26 +11,26 @@ import { useSelector } from "react-redux";
 import { selectIsDarkTheme } from "../Homepage/Header/ThemeSwitch/themeSlice";
 
 function App() {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
+    const isDarkTheme = useSelector(selectIsDarkTheme);
 
-  return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-    <>
-      <Normalize />
-      <GlobalStyle />
-      <AppWrapper>
-        <AppContainer>
-        <Header />
-          <main>
-        <Skills />
-        <Portfolio />
-          </main>
-        <Footer />
-        </AppContainer>
-      </AppWrapper>
-    </>
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+            <>
+                <Normalize/>
+                <GlobalStyle/>
+                <AppWrapper>
+                    <AppContainer>
+                        <Header/>
+                        <main>
+                            <Skills/>
+                            <Portfolio/>
+                        </main>
+                        <Footer/>
+                    </AppContainer>
+                </AppWrapper>
+            </>
+        </ThemeProvider>
+    );
 }
 
 export default App;

@@ -1,9 +1,9 @@
-import {useSelector} from "react-redux";
-import {selectIsDarkTheme} from "../../Header/ThemeSwitch/themeSlice";
-import {github} from "../../personalInfo";
+import { useSelector } from "react-redux";
+import { selectIsDarkTheme } from "../../Header/ThemeSwitch/themeSlice";
+import { github } from "../../personalInfo";
 import dangerBlack from "./dangerBlack.svg"
 import dangerLight from "./dangerLight.svg"
-import {Wrapper, DangerIcon, Title, InfoWrapper, Text, ButtonLink} from "./styled";
+import { ButtonLink, DangerIcon, InfoWrapper, Text, Title, Wrapper } from "./styled";
 
 const Error = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
